@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="af311814-b937-4bf9-a3dc-64ea1e43a00c" name="DiagramaDeAutenticação" linkedPackageId="3ea1ea13-92b2-4d90-9cad-b3a893651064" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="4edbdd32-1ed1-4139-9bfe-0d894b8b5fcf">
+      <profileInstance Id="b23e7591-b650-4ec2-81a4-8ab0a4788eca" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3c9f1f96-458d-4916-b4fe-4bb36908c029">
+      <profileInstance Id="b92e7217-a624-49c8-b1bf-bdda618ce1e4" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="2386fe48-b676-4795-82f6-18bfbc451231" name="DiagramaDeAutenticação" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="bd244242-41ee-4d34-bafb-cc1c3281235b" />
+        <nodes>
+          <initialNode Id="489bcc5d-1065-455e-a11e-1bcbdcfd6155" name="Initial1" isLeaf="false">
+            <elementDefinition Id="e3c701ed-13fb-44e2-9684-ae291c3f40e3" />
+            <flowNodeTargets>
+              <controlFlow Id="82e2e9bb-7357-44de-bcd6-84f0b2dea0bd" isLeaf="false">
+                <opaqueActionMoniker Id="3a2fe2f1-ea0b-40ce-b14a-7c666c2c0ade" LastKnownName="Verificar Usuário Autenticado" />
+                <elementDefinition Id="1dfc662f-329b-49a9-ba47-f7d088916654" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="3a2fe2f1-ea0b-40ce-b14a-7c666c2c0ade" name="Verificar Usuário Autenticado" isLeaf="false">
+            <elementDefinition Id="5fd7c4c6-2ddc-4213-8825-59e25092792e" />
+            <flowNodeTargets>
+              <controlFlow Id="fc707341-d301-486c-ab56-73681c5d7fef" isLeaf="false">
+                <decisionNodeMoniker Id="82eea9ce-e414-42d0-8373-81b5f47012f7" LastKnownName="Decision1" />
+                <elementDefinition Id="0dac4719-c37b-457f-9ef2-c708bb826d8c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="82eea9ce-e414-42d0-8373-81b5f47012f7" name="Decision1" isLeaf="false">
+            <elementDefinition Id="d07c4f3a-a7eb-4945-be9e-d08bedce86f4" />
+            <flowNodeTargets>
+              <controlFlow Id="877b77ae-dbe8-4ff1-bbbc-15fe9554d85d" guard="Autenticado = true" isLeaf="false">
+                <activityFinalNodeMoniker Id="ccd16b03-40c3-4884-8368-a744d817ad7e" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="61b57a0a-3686-4f31-b80b-ec5b70986dd0" />
+              </controlFlow>
+              <controlFlow Id="3e112536-f45a-41b0-a152-84b4c08f6ca6" guard="Autenticado = false" isLeaf="false">
+                <opaqueActionMoniker Id="e71c8243-3ace-473d-a337-937b31dc36fc" LastKnownName="Autenticar Usuário" />
+                <elementDefinition Id="5921fcc6-accb-40c2-9705-179e65c3f3ba" />
+              </controlFlow>
+              <controlFlow Id="34d8af46-d8b4-4a6e-ae7b-0d7e0f1ab9e9" isLeaf="false">
+                <opaqueActionMoniker Id="1fb958cb-3e5b-4ec6-a7ee-387d23596d7a" LastKnownName="Cadastrar Usuário" />
+                <elementDefinition Id="1a260782-edef-403f-b6c0-ed85b7376911" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="e71c8243-3ace-473d-a337-937b31dc36fc" name="Autenticar Usuário" isLeaf="false">
+            <elementDefinition Id="46ab2931-8cfd-462a-a26e-caada5871a4a" />
+            <flowNodeTargets>
+              <controlFlow Id="af196b03-1e14-4534-98eb-04af898d74d7" guard="Dados Corretos = true" isLeaf="false">
+                <activityFinalNodeMoniker Id="ccd16b03-40c3-4884-8368-a744d817ad7e" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="690ce4b9-923d-4906-90fb-d054ee6907bb" />
+              </controlFlow>
+              <controlFlow Id="4039cdb6-84c8-430e-8fd9-2de17e256c66" guard="Dados Corretos = false" isLeaf="false">
+                <opaqueActionMoniker Id="e71c8243-3ace-473d-a337-937b31dc36fc" LastKnownName="Autenticar Usuário" />
+                <elementDefinition Id="acc448fe-30a8-41b6-a729-9c3cb8a619b0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="ccd16b03-40c3-4884-8368-a744d817ad7e" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="33c4807a-ad69-4742-bb03-6ad0bcf27ca2" />
+          </activityFinalNode>
+          <opaqueAction Id="1fb958cb-3e5b-4ec6-a7ee-387d23596d7a" name="Cadastrar Usuário" isLeaf="false">
+            <elementDefinition Id="2d91c21e-e5fb-4909-b0d8-1930782b1a67" />
+            <flowNodeTargets>
+              <controlFlow Id="fcbac3ac-32b2-4111-8121-c8981f18c564" guard="Dados Válidos = false" isLeaf="false">
+                <opaqueActionMoniker Id="1fb958cb-3e5b-4ec6-a7ee-387d23596d7a" LastKnownName="Cadastrar Usuário" />
+                <elementDefinition Id="0b6d4c06-257b-4f73-92ad-4848e7e23db8" />
+              </controlFlow>
+              <controlFlow Id="d68b78b5-f799-4917-b168-60b80bb5295b" guard="Dados Válidos = true" isLeaf="false">
+                <opaqueActionMoniker Id="e71c8243-3ace-473d-a337-937b31dc36fc" LastKnownName="Autenticar Usuário" />
+                <elementDefinition Id="07ff8bc7-7f23-4ac4-b29a-44e8aa6ba192" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="3ea1ea13-92b2-4d90-9cad-b3a893651064" name="ModelagemDeSistemas">
+    <elementDefinition Id="a643e59f-cc81-4c6c-a880-f7dd110204db" />
+  </package>
+</activityRootModel>

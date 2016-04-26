@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="99fabe29-bc8b-4153-bbcd-e41c7329f4ed" name="Cliente_ContratarServiço" linkedPackageId="16f3ce7f-d54b-4637-ab6e-333f07de8b22" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="6e0faf53-af38-4369-9c14-3d1f7e005063">
+      <profileInstance Id="37d19cac-0686-4bd5-a341-ecf3d5536579" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="36baf0cc-04fb-4e4d-ae61-9c0e9be7632f">
+      <profileInstance Id="9d1eca78-5ec0-4a10-8a77-9ceab2cd7eb0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="43a06602-5d4f-49f1-91f7-c9ec9b8f2253" name="Cliente_ContratarServiço" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="849090ce-9e8a-471d-8671-761edca15e7b" />
+        <nodes>
+          <initialNode Id="5b2cd791-6e97-4942-8432-a892a5741320" name="Initial1" isLeaf="false">
+            <elementDefinition Id="14153460-0f7f-4e42-a52e-cbd358697bf6" />
+            <flowNodeTargets>
+              <controlFlow Id="9c433088-6217-4891-a528-5b92f809f3c6" isLeaf="false">
+                <opaqueActionMoniker Id="72152413-0655-44cb-8d12-d8ec6b10f4a1" LastKnownName="Selecionar Serviço" />
+                <elementDefinition Id="761974e5-64a4-468f-b5c1-9b6c2933cdcc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="72152413-0655-44cb-8d12-d8ec6b10f4a1" name="Selecionar Serviço" isLeaf="false">
+            <elementDefinition Id="e354556d-c449-4a4f-a0d4-9850a7e4cac1" />
+            <flowNodeTargets>
+              <controlFlow Id="47dfb34c-341b-4950-92d4-b5965ab178ce" isLeaf="false">
+                <opaqueActionMoniker Id="c4b6273e-1f80-4b03-b901-6546b2b5a532" LastKnownName="Contratar Serviço" />
+                <elementDefinition Id="2b9d7e89-c8f2-4150-92c5-84eeadf8c6bb" />
+              </controlFlow>
+              <controlFlow Id="3724de9d-4e9c-4175-840e-bad522662d55" isLeaf="false">
+                <opaqueActionMoniker Id="08c87bf4-c71d-40c8-9c3b-a6cc76c04283" LastKnownName="Contatar Prestador" />
+                <elementDefinition Id="841abec2-386c-461a-972e-4b20b509f6bb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c4b6273e-1f80-4b03-b901-6546b2b5a532" name="Contratar Serviço" isLeaf="false">
+            <elementDefinition Id="c6aa6204-1727-4b82-850e-17427bc66fdd" />
+            <flowNodeTargets>
+              <controlFlow Id="76a96a35-bfe7-4ae2-95ea-c3b3e2bf9b01" isLeaf="false">
+                <opaqueActionMoniker Id="078377c3-93ec-4fd4-ad0e-89f3ebc09154" LastKnownName="Finalizar Contrato" />
+                <elementDefinition Id="3c6abeb9-47f2-410f-936d-267c439f485c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="08c87bf4-c71d-40c8-9c3b-a6cc76c04283" name="Contatar Prestador" isLeaf="false">
+            <elementDefinition Id="8636710b-f7a6-4463-bcdf-5a7b209e1532" />
+            <flowNodeTargets>
+              <controlFlow Id="534cdc36-4794-4f2b-8045-fdcb3fa6218b" isLeaf="false">
+                <opaqueActionMoniker Id="90c81e24-1a3a-48f5-9a3f-7802a2eab7b5" LastKnownName="Enviar Mensagem" />
+                <elementDefinition Id="ba0a2540-c5f7-4f95-9094-a00733e13e9b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="078377c3-93ec-4fd4-ad0e-89f3ebc09154" name="Finalizar Contrato" isLeaf="false">
+            <elementDefinition Id="e5c1cbaf-467b-4355-8450-d67c21ae5c69" />
+            <flowNodeTargets>
+              <controlFlow Id="9c97e3e5-c2f0-44ff-b090-90cc53289dc9" isLeaf="false">
+                <forkNodeMoniker Id="5f7ee617-a022-4973-8405-0f68d3ae04d4" LastKnownName="Fork1" />
+                <elementDefinition Id="ac632288-9037-441b-ae29-6f1745c68af3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="29735b47-8994-40ef-bda5-9098817c0d15" name="Criar Solicitação de Contrato" isLeaf="false">
+            <elementDefinition Id="fa50f996-8d9c-4e8b-9112-2ca4a33e84e5" />
+            <flowNodeTargets>
+              <controlFlow Id="f0a53771-2126-4b51-9545-b47a58ae5b2d" isLeaf="false">
+                <joinNodeMoniker Id="65439b30-695b-4479-b286-5dd00542e420" LastKnownName="Join1" />
+                <elementDefinition Id="037734f4-cc45-47ee-af7e-cf508b55e2d1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <sendSignalAction Id="8b649ec9-a6e0-43ff-8faa-66b035c7cecf" name="Enviar Notificação ao Prestador" isLeaf="false">
+            <elementDefinition Id="3ad6d55f-5ccc-4722-8020-fb1cd05c8491" />
+            <flowNodeTargets>
+              <controlFlow Id="fcad4002-d565-4998-a631-3b2ccf488523" isLeaf="false">
+                <joinNodeMoniker Id="65439b30-695b-4479-b286-5dd00542e420" LastKnownName="Join1" />
+                <elementDefinition Id="daa987f1-ca8b-46af-beaa-657cd539bc9b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <forkNode Id="5f7ee617-a022-4973-8405-0f68d3ae04d4" name="Fork1" isLeaf="false">
+            <elementDefinition Id="3d1e3871-e845-4774-b296-8529bd4efe37" />
+            <flowNodeTargets>
+              <controlFlow Id="b4710cef-8637-4315-8f58-6575668d825d" isLeaf="false">
+                <opaqueActionMoniker Id="29735b47-8994-40ef-bda5-9098817c0d15" LastKnownName="Criar Solicitação de Contrato" />
+                <elementDefinition Id="6c7cd8f7-808b-4311-878f-ba335df76500" />
+              </controlFlow>
+              <controlFlow Id="1cb76c20-e4d0-4044-9db9-abd6baccdf34" isLeaf="false">
+                <sendSignalActionMoniker Id="8b649ec9-a6e0-43ff-8faa-66b035c7cecf" LastKnownName="Enviar Notificação ao Prestador" />
+                <elementDefinition Id="f444f693-e12c-474c-84ea-775ed425255b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="90c81e24-1a3a-48f5-9a3f-7802a2eab7b5" name="Enviar Mensagem" isLeaf="false">
+            <elementDefinition Id="07a48536-c8dd-4eac-b174-f5658845eca0" />
+            <flowNodeTargets>
+              <controlFlow Id="d7a2e8f6-ce5e-4810-94fa-b1d0967f86f8" isLeaf="false">
+                <sendSignalActionMoniker Id="5bb7236b-38b8-4a67-8cb8-181bf8bfe559" LastKnownName="Enviar Notificação de Mensagem ao Prestador" />
+                <elementDefinition Id="f73299fd-cbbd-4a24-a61c-901ea8c4fb2e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <sendSignalAction Id="5bb7236b-38b8-4a67-8cb8-181bf8bfe559" name="Enviar Notificação de Mensagem ao Prestador" isLeaf="false">
+            <elementDefinition Id="876cb413-24c9-4117-b46c-fa88b25a7f87" />
+            <flowNodeTargets>
+              <controlFlow Id="55adf4bd-1edc-4914-b860-6a50101352e0" isLeaf="false">
+                <activityFinalNodeMoniker Id="1a09f1c3-6c0e-4810-a58f-8147273b11d9" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="fb32eb23-5022-4c76-8e38-5da5a95edea0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <joinNode Id="65439b30-695b-4479-b286-5dd00542e420" name="Join1" isLeaf="false">
+            <elementDefinition Id="dcef0d1f-e187-43eb-b2d2-2b3585027ef9" />
+            <flowNodeTargets>
+              <controlFlow Id="051762d1-4b58-45e7-9b2a-cf01c0655b07" isLeaf="false">
+                <activityFinalNodeMoniker Id="1a09f1c3-6c0e-4810-a58f-8147273b11d9" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="227e0cf8-649f-4a39-986c-b005200c6567" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode Id="1a09f1c3-6c0e-4810-a58f-8147273b11d9" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="a12b5fa9-3a16-46b0-a9c6-d3641e2a9d9b" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="16f3ce7f-d54b-4637-ab6e-333f07de8b22" name="ModelagemDeSistemas">
+    <elementDefinition Id="a643e59f-cc81-4c6c-a880-f7dd110204db" />
+  </package>
+</activityRootModel>
