@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e55d6643-7f74-4ab8-97ba-57d0c0a15389" name="Iniciar_Conversa" linkedPackageId="e6002128-3714-4a2b-8adb-2734ea3d5b88" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="5f6a831c-4a24-425d-a285-182fcc3688ae" name="Iniciar_Conversa" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="827a980d-6984-4bcd-8903-4ba31fc78cd3" />
+        <nodes>
+          <initialNode Id="93bd8ba4-a1ae-41a1-b71e-a515d39dc3c9" name="Initial1" isLeaf="false">
+            <elementDefinition Id="197f28ef-191f-4e03-8fd0-fc4c2125fc34" />
+            <flowNodeTargets>
+              <controlFlow Id="35249ee8-75aa-4b6d-ad68-b97b0e6cf967" isLeaf="false">
+                <opaqueActionMoniker Id="29781daa-fa66-4b36-9cd3-d2d372af9281" LastKnownName="Visualizar Conversa" />
+                <elementDefinition Id="fef63422-cf19-4e70-89dd-e8a86a87c037" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="29781daa-fa66-4b36-9cd3-d2d372af9281" name="Visualizar Conversa" isLeaf="false">
+            <elementDefinition Id="3fe4743d-c432-4d9f-9715-4d9a6818a186" />
+            <flowNodeTargets>
+              <controlFlow Id="cba4a039-1871-482b-8596-ed36b7818d92" isLeaf="false">
+                <decisionNodeMoniker Id="843048c9-d92e-4c90-b56b-b9ab0191f0df" LastKnownName="Decision1" />
+                <elementDefinition Id="f00c6b78-94b2-4368-bf8a-d866a220a3b9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d54528d8-6d80-4213-919c-3dac9ad78ea1" name="Enviar Mensagem de Texto" isLeaf="false">
+            <elementDefinition Id="6b63a07b-a3d0-4afd-ac15-939ae2d87d82" />
+            <flowNodeTargets>
+              <controlFlow Id="e69f0b7c-4237-4541-aca1-0481f397065c" isLeaf="false">
+                <mergeNodeMoniker Id="6122b0cf-eac0-4620-84b4-3ca2b7273451" LastKnownName="Merge1" />
+                <elementDefinition Id="df7f374d-9fbf-4be3-bcc8-6d5984e3222c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="843048c9-d92e-4c90-b56b-b9ab0191f0df" name="Decision1" isLeaf="false">
+            <elementDefinition Id="6d250776-47f2-404b-a686-fc30fbeaedb5" />
+            <flowNodeTargets>
+              <controlFlow Id="7a8c1437-ab28-43f7-a4c4-ec1d234c81d0" guard="Enviar Texto = true" isLeaf="false">
+                <opaqueActionMoniker Id="d54528d8-6d80-4213-919c-3dac9ad78ea1" LastKnownName="Enviar Mensagem de Texto" />
+                <elementDefinition Id="ba6b0c01-9680-4b6d-810c-b1534d79d3a4" />
+              </controlFlow>
+              <controlFlow Id="621df61c-4f5c-4f60-871d-7e66831d850e" guard="Else" isLeaf="false">
+                <opaqueActionMoniker Id="a505409d-04eb-471b-8287-2dd4497b4227" LastKnownName="Selecionar Foto" />
+                <elementDefinition Id="4fd7ab4b-66ea-4357-9349-544a8092fc76" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="a505409d-04eb-471b-8287-2dd4497b4227" name="Selecionar Foto" isLeaf="false">
+            <elementDefinition Id="14e05c7c-61d6-4574-9372-48dfaf95a8ce" />
+            <flowNodeTargets>
+              <controlFlow Id="5296bc02-0f40-4362-acdd-e722ed84e366" isLeaf="false">
+                <opaqueActionMoniker Id="7754b262-7972-4822-bdec-e4d7a119f97b" LastKnownName="Enviar Foto" />
+                <elementDefinition Id="2e5dba7c-c259-486c-90b8-445abcd46815" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7754b262-7972-4822-bdec-e4d7a119f97b" name="Enviar Foto" isLeaf="false">
+            <elementDefinition Id="7dd1dc58-ec54-4527-a25d-527440ff9f20" />
+            <flowNodeTargets>
+              <controlFlow Id="623758ad-2cfe-45d5-9dd0-ea00c5c78a55" isLeaf="false">
+                <mergeNodeMoniker Id="6122b0cf-eac0-4620-84b4-3ca2b7273451" LastKnownName="Merge1" />
+                <elementDefinition Id="932962b0-701c-4775-9bdf-e43a4545c8f5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="6122b0cf-eac0-4620-84b4-3ca2b7273451" name="Merge1" isLeaf="false">
+            <elementDefinition Id="0bc040f0-503e-4d7c-8908-4d6c0589cd49" />
+            <flowNodeTargets>
+              <controlFlow Id="27400b43-58cd-4756-8e0f-649caaeadc20" isLeaf="false">
+                <sendSignalActionMoniker Id="441a5757-1ef7-4933-8bff-7ab0d5943cc5" LastKnownName="Enviar Mensagem" />
+                <elementDefinition Id="75af8e8c-a527-4913-bb48-6673026e737a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <sendSignalAction Id="441a5757-1ef7-4933-8bff-7ab0d5943cc5" name="Enviar Mensagem" isLeaf="false">
+            <elementDefinition Id="de47ea5e-1742-4117-a390-9bcee35397d4" />
+            <flowNodeTargets>
+              <controlFlow Id="45e11665-911e-4243-82b2-684abd416771" isLeaf="false">
+                <acceptEventActionMoniker Id="a9204694-39b6-4fce-851f-99a8186bfb15" LastKnownName="Receber Notificação de Mensagem" />
+                <elementDefinition Id="842579ac-088d-4508-b0ce-70adfa73cbf9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <acceptEventAction Id="a9204694-39b6-4fce-851f-99a8186bfb15" name="Receber Notificação de Mensagem" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="0ecd77d5-f5fb-446c-8597-de330915163d" />
+            <flowNodeTargets>
+              <controlFlow Id="738f87e4-220d-4cb8-8b4e-1c22e3f9e6ba" isLeaf="false">
+                <activityFinalNodeMoniker Id="d1db0182-20e1-444f-806d-15c5ac28f3af" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="a4390aff-609b-43f5-addc-4118f8b05d10" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <activityFinalNode Id="d1db0182-20e1-444f-806d-15c5ac28f3af" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="5027fc54-3ce9-40c6-a435-027b1a5ae81e" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="e6002128-3714-4a2b-8adb-2734ea3d5b88" name="ModelagemDeSistemas">
+    <elementDefinition Id="a643e59f-cc81-4c6c-a880-f7dd110204db" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ea3af215-d9a4-46d7-995c-ad594becbb5f">
+        <profileInstance Id="b57db516-98c6-41ae-be90-da62de198a76" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="7d4993de-4fee-4ee1-9780-670d8d01b98d">
+        <profileInstance Id="c264eb24-d096-44f1-8f65-6137b8aec7dc" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

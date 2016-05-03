@@ -22,6 +22,13 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Iniciar_Conversa.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Iniciar_Conversa.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Iniciar_Conversa.activitydiagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="Cliente.activitydiagram">
       <SubType>Content</SubType>
@@ -37,6 +44,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Cliente_ContratarServiço.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="DA_SistemaTodo.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DA_SistemaTodo.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DA_SistemaTodo.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="DiagramaDeAutenticação.activitydiagram">
       <SubType>Content</SubType>
     </Content>
@@ -44,12 +58,12 @@
       <SubType>Content</SubType>
       <DependentUpon>DiagramaDeAutenticação.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="Cliente_Filtragem.activitydiagram">
+    <Content Include="Listar_Serviços.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Cliente_Filtragem.activitydiagram.layout">
+    <Content Include="Listar_Serviços.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Cliente_Filtragem.activitydiagram</DependentUpon>
+      <DependentUpon>Listar_Serviços.activitydiagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\ModelagemDeSistemas.uml">
       <SubType>Content</SubType>

@@ -579,6 +579,538 @@
         </nodes>
       </activity>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="aa521192-90cf-4f3b-8793-c1f7d7771e1f"
+        name="DA_SistemaTodo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="84197e5a-b5f9-4015-ae37-32bc3feb6365"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a3d44614-d334-42d0-92de-cea14225157f"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="bd2c71b5-9253-4200-b041-48165b818b1a"
+                  LastKnownName="Autenticação"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <callBehaviorAction
+            Id="bd2c71b5-9253-4200-b041-48165b818b1a"
+            name="Autenticação"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="32614e56-80ff-4072-9025-c49edbe50506"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="ec0bb878-dfab-440b-bded-82ee6c2bb9da"
+                  LastKnownName="Listar Serviços"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <behavior>
+              <activityMoniker
+                Id="bd244242-41ee-4d34-bafb-cc1c3281235b"
+                LastKnownName="DiagramaDeAutenticação"
+                LastKnownLocation="ModelagemDeSistemas.uml" />
+            </behavior>
+          </callBehaviorAction>
+          <opaqueAction
+            Id="92a40b06-04db-405c-bfe4-17845f2d0c98"
+            name="Visualizar Serviço"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="009e5e46-b95c-47ca-953b-a2e1a5fcdf53"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="1171b621-756f-409f-aaee-4ef5a05fe50a"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7c5b3b7b-f9b1-4ccb-be80-5b6f6f30976f"
+            name="Solicitar Serviço"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="872c5a1b-da0c-4b2b-af31-811fd3fc0281"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="a9753e6d-8323-4d16-80d2-22403d0737be"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="1171b621-756f-409f-aaee-4ef5a05fe50a"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e760473b-3dc3-46d3-9309-51609a2f8de2"
+                guard="Else"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7c5b3b7b-f9b1-4ccb-be80-5b6f6f30976f"
+                  LastKnownName="Solicitar Serviço"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="1d6c0216-350e-44bc-b3cf-25a5288e32ba"
+                guard="Solicitou Inicio de Conversa"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="e491646f-7d79-4939-b87d-343cb66d11d6"
+                  LastKnownName="Iniciar Conversa"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="72872a7c-38ac-49b2-b0d9-b67181630393"
+            name="Listar Contratos"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f53fffa6-6df4-495f-988e-13e37b78c2cc"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="1b608a01-78f9-45bf-a517-0e68281d6694"
+                  LastKnownName="Join1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <sendSignalAction
+            Id="cf1a2c8d-126e-4f24-9138-418f24cf90ad"
+            name="Notificar Fornecedor"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0e0419d7-bc0a-4f38-ba52-ad76f8bb079c"
+                isLeaf="false">
+                <acceptEventActionMoniker
+                  Id="32fb2e20-9041-435b-b9b6-9a545727dc1c"
+                  LastKnownName="Receber Notificação de Novo Serviço"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <forkNode
+            Id="a9753e6d-8323-4d16-80d2-22403d0737be"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="df655a52-de80-431e-8458-30a4e0db762a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="72872a7c-38ac-49b2-b0d9-b67181630393"
+                  LastKnownName="Listar Contratos"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d25653ce-e94d-4a49-aff3-0e04c38afecf"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="cf1a2c8d-126e-4f24-9138-418f24cf90ad"
+                  LastKnownName="Notificar Fornecedor"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <acceptEventAction
+            Id="32fb2e20-9041-435b-b9b6-9a545727dc1c"
+            name="Receber Notificação de Novo Serviço"
+            isLeaf="false"
+            isUnmarshall="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6df07afe-b952-437f-9e7b-cbaeec5c6a27"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d9587ae1-8c5f-4032-9ded-2ee994dd5c4f"
+                  LastKnownName="Aceitar Contrato"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <opaqueAction
+            Id="d9587ae1-8c5f-4032-9ded-2ee994dd5c4f"
+            name="Aceitar Contrato"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dea4471b-8cda-49f5-8ac1-f38d2092e229"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="1b608a01-78f9-45bf-a517-0e68281d6694"
+                  LastKnownName="Join1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="1b608a01-78f9-45bf-a517-0e68281d6694"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f3a41462-cf33-497a-9201-a5f4853354d8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2756bb61-690a-4504-a012-e69eeb5f2aca"
+                  LastKnownName="Visualizar Contrato"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction
+            Id="2756bb61-690a-4504-a012-e69eeb5f2aca"
+            name="Visualizar Contrato"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4319e808-b8cd-44c1-ae94-7f8fa6c2ef27"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9b61d859-1539-4f03-bab2-73b8fd616fa5"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="9b61d859-1539-4f03-bab2-73b8fd616fa5"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <callBehaviorAction
+            Id="ec0bb878-dfab-440b-bded-82ee6c2bb9da"
+            name="Listar Serviços"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7545e072-af39-43e3-9e1d-ca65ea525ee7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="92a40b06-04db-405c-bfe4-17845f2d0c98"
+                  LastKnownName="Visualizar Serviço"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <behavior>
+              <activityMoniker
+                Id="622db9a7-7424-449b-ad98-d1286f0cd2fb"
+                LastKnownName="Listar_Serviços"
+                LastKnownLocation="ModelagemDeSistemas.uml" />
+            </behavior>
+          </callBehaviorAction>
+          <callBehaviorAction
+            Id="e491646f-7d79-4939-b87d-343cb66d11d6"
+            name="Iniciar Conversa"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8a58f500-37a3-4530-946f-4a8182e51955"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="92a40b06-04db-405c-bfe4-17845f2d0c98"
+                  LastKnownName="Visualizar Serviço"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <behavior>
+              <activityMoniker
+                Id="827a980d-6984-4bcd-8903-4ba31fc78cd3"
+                LastKnownName="Iniciar_Conversa"
+                LastKnownLocation="ModelagemDeSistemas.uml" />
+            </behavior>
+          </callBehaviorAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="622db9a7-7424-449b-ad98-d1286f0cd2fb"
+        name="Listar_Serviços"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="1af73093-7776-4303-bd9d-e03fb33e2975"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="aad8758b-14f4-460c-9bf3-c85d1e90fe77"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a10c9cad-e871-450c-bf6d-4cff5e01886b"
+                  LastKnownName="Listar Todos os Serviços"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="a10c9cad-e871-450c-bf6d-4cff5e01886b"
+            name="Listar Todos os Serviços"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="65f83d7b-7a90-4212-9681-b70aaa186d55"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="51e9a889-9b1e-452a-91dc-404ea12c2bb3"
+                  LastKnownName="Filtrar Dados"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="51e9a889-9b1e-452a-91dc-404ea12c2bb3"
+            name="Filtrar Dados"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0bb34216-dc27-4bec-b0f7-17fd6d5f9295"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="3da4bbcc-2e1e-401b-85be-56322b6f87a2"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="cb8382b0-f89f-4f32-a4c3-d9d77e6e3459"
+            name="Listar Serviços Filtrados"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7fcca5ee-1603-4ec0-bf9d-02c1d62b82df"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9e397a84-3933-4485-9952-71d7cda4bc91"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="3da4bbcc-2e1e-401b-85be-56322b6f87a2"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7ec67a74-adb3-4419-ade1-8174d511fa5f"
+                guard="Filtro Vazio"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a10c9cad-e871-450c-bf6d-4cff5e01886b"
+                  LastKnownName="Listar Todos os Serviços"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8d8f6a38-cc58-4503-bfbf-8552b8fcea4b"
+                guard="Else"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cb8382b0-f89f-4f32-a4c3-d9d77e6e3459"
+                  LastKnownName="Listar Serviços Filtrados"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="9e397a84-3933-4485-9952-71d7cda4bc91"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="827a980d-6984-4bcd-8903-4ba31fc78cd3"
+        name="Iniciar_Conversa"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="197f28ef-191f-4e03-8fd0-fc4c2125fc34"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fef63422-cf19-4e70-89dd-e8a86a87c037"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3fe4743d-c432-4d9f-9715-4d9a6818a186"
+                  LastKnownName="Visualizar Conversa"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="3fe4743d-c432-4d9f-9715-4d9a6818a186"
+            name="Visualizar Conversa"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f00c6b78-94b2-4368-bf8a-d866a220a3b9"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="6d250776-47f2-404b-a686-fc30fbeaedb5"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6b63a07b-a3d0-4afd-ac15-939ae2d87d82"
+            name="Enviar Mensagem de Texto"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="df7f374d-9fbf-4be3-bcc8-6d5984e3222c"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="0bc040f0-503e-4d7c-8908-4d6c0589cd49"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="6d250776-47f2-404b-a686-fc30fbeaedb5"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ba6b0c01-9680-4b6d-810c-b1534d79d3a4"
+                guard="Enviar Texto = true"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6b63a07b-a3d0-4afd-ac15-939ae2d87d82"
+                  LastKnownName="Enviar Mensagem de Texto"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="4fd7ab4b-66ea-4357-9349-544a8092fc76"
+                guard="Else"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="14e05c7c-61d6-4574-9372-48dfaf95a8ce"
+                  LastKnownName="Selecionar Foto"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="14e05c7c-61d6-4574-9372-48dfaf95a8ce"
+            name="Selecionar Foto"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2e5dba7c-c259-486c-90b8-445abcd46815"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7dd1dc58-ec54-4527-a25d-527440ff9f20"
+                  LastKnownName="Enviar Foto"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7dd1dc58-ec54-4527-a25d-527440ff9f20"
+            name="Enviar Foto"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="932962b0-701c-4775-9bdf-e43a4545c8f5"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="0bc040f0-503e-4d7c-8908-4d6c0589cd49"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="0bc040f0-503e-4d7c-8908-4d6c0589cd49"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="75af8e8c-a527-4913-bb48-6673026e737a"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="de47ea5e-1742-4117-a390-9bcee35397d4"
+                  LastKnownName="Enviar Mensagem"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <sendSignalAction
+            Id="de47ea5e-1742-4117-a390-9bcee35397d4"
+            name="Enviar Mensagem"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="842579ac-088d-4508-b0ce-70adfa73cbf9"
+                isLeaf="false">
+                <acceptEventActionMoniker
+                  Id="0ecd77d5-f5fb-446c-8597-de330915163d"
+                  LastKnownName="Receber Notificação de Mensagem"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <acceptEventAction
+            Id="0ecd77d5-f5fb-446c-8597-de330915163d"
+            name="Receber Notificação de Mensagem"
+            isLeaf="false"
+            isUnmarshall="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a4390aff-609b-43f5-addc-4118f8b05d10"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="5027fc54-3ce9-40c6-a435-027b1a5ae81e"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <activityFinalNode
+            Id="5027fc54-3ce9-40c6-a435-027b1a5ae81e"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
