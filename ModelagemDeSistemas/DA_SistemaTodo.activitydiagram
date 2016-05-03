@@ -68,15 +68,6 @@
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
-          <opaqueAction Id="8dac09ff-dcfd-4118-af4b-6223a1f2268d" name="Listar Contratos" isLeaf="false">
-            <elementDefinition Id="72872a7c-38ac-49b2-b0d9-b67181630393" />
-            <flowNodeTargets>
-              <controlFlow Id="bdafa834-7752-47c9-81c9-f77a58487af0" isLeaf="false">
-                <joinNodeMoniker Id="f1cd06ee-d771-49fb-8251-78c7a01a903c" LastKnownName="Join1" />
-                <elementDefinition Id="f53fffa6-6df4-495f-988e-13e37b78c2cc" />
-              </controlFlow>
-            </flowNodeTargets>
-          </opaqueAction>
           <sendSignalAction Id="4ab47b0d-5b5a-41f0-a217-78361e8c852c" name="Notificar Fornecedor" isLeaf="false">
             <elementDefinition Id="cf1a2c8d-126e-4f24-9138-418f24cf90ad" />
             <flowNodeTargets>
@@ -89,34 +80,25 @@
           <forkNode Id="03441a75-d4de-41ae-9831-9fed1dc9b9f3" name="Fork1" isLeaf="false">
             <elementDefinition Id="a9753e6d-8323-4d16-80d2-22403d0737be" />
             <flowNodeTargets>
-              <controlFlow Id="14424ec7-272d-4e8f-9833-a0d5c43d099b" isLeaf="false">
-                <opaqueActionMoniker Id="8dac09ff-dcfd-4118-af4b-6223a1f2268d" LastKnownName="Listar Contratos" />
-                <elementDefinition Id="df655a52-de80-431e-8458-30a4e0db762a" />
-              </controlFlow>
               <controlFlow Id="b65c7a2d-6c8a-4d61-92ab-64fe3c9a8334" isLeaf="false">
                 <sendSignalActionMoniker Id="4ab47b0d-5b5a-41f0-a217-78361e8c852c" LastKnownName="Notificar Fornecedor" />
                 <elementDefinition Id="d25653ce-e94d-4a49-aff3-0e04c38afecf" />
+              </controlFlow>
+              <controlFlow Id="833fa6ab-f138-4585-92a6-8765bbe0770f" isLeaf="false">
+                <callBehaviorActionMoniker Id="8b5f1f0e-5b67-4b91-965a-b6c797242971" LastKnownName="Listar Contratos" />
+                <elementDefinition Id="365d8d1f-067e-4267-b12f-988a776134e0" />
               </controlFlow>
             </flowNodeTargets>
           </forkNode>
           <acceptEventAction Id="8ce304e7-ecfa-4443-8463-0e9a92c4ae58" name="Receber Notificação de Novo Serviço" isLeaf="false" isUnmarshall="false">
             <elementDefinition Id="32fb2e20-9041-435b-b9b6-9a545727dc1c" />
             <flowNodeTargets>
-              <controlFlow Id="42c393d1-7fa3-4a93-977c-d8f6930045ce" isLeaf="false">
-                <opaqueActionMoniker Id="b2837f31-5f7b-472a-828b-6b4eeffb56df" LastKnownName="Aceitar Contrato" />
-                <elementDefinition Id="6df07afe-b952-437f-9e7b-cbaeec5c6a27" />
+              <controlFlow Id="d221670d-6422-4777-b262-0f90f52da3ca" isLeaf="false">
+                <callBehaviorActionMoniker Id="d422ab1a-0831-4919-8f09-d86a7b18602e" LastKnownName="Aceitar Contrato" />
+                <elementDefinition Id="b35a89ec-b515-4a2e-a454-0c31de010113" />
               </controlFlow>
             </flowNodeTargets>
           </acceptEventAction>
-          <opaqueAction Id="b2837f31-5f7b-472a-828b-6b4eeffb56df" name="Aceitar Contrato" isLeaf="false">
-            <elementDefinition Id="d9587ae1-8c5f-4032-9ded-2ee994dd5c4f" />
-            <flowNodeTargets>
-              <controlFlow Id="d379f731-3040-4097-afba-b5919ebabaec" isLeaf="false">
-                <joinNodeMoniker Id="f1cd06ee-d771-49fb-8251-78c7a01a903c" LastKnownName="Join1" />
-                <elementDefinition Id="dea4471b-8cda-49f5-8ac1-f38d2092e229" />
-              </controlFlow>
-            </flowNodeTargets>
-          </opaqueAction>
           <joinNode Id="f1cd06ee-d771-49fb-8251-78c7a01a903c" name="Join1" isLeaf="false">
             <elementDefinition Id="1b608a01-78f9-45bf-a517-0e68281d6694" />
             <flowNodeTargets>
@@ -153,6 +135,24 @@
               <controlFlow Id="fbc73138-6d89-47da-9167-6887e2e59cba" isLeaf="false">
                 <opaqueActionMoniker Id="9e61b01d-f09b-44d4-aff9-85bb9e020f62" LastKnownName="Visualizar Serviço" />
                 <elementDefinition Id="8a58f500-37a3-4530-946f-4a8182e51955" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <callBehaviorAction Id="d422ab1a-0831-4919-8f09-d86a7b18602e" name="Aceitar Contrato" isLeaf="false">
+            <elementDefinition Id="bcda37d3-36ea-4f79-8106-41ab646ea586" />
+            <flowNodeTargets>
+              <controlFlow Id="2a05162f-ef7c-4952-93d7-217413c6bed6" isLeaf="false">
+                <joinNodeMoniker Id="f1cd06ee-d771-49fb-8251-78c7a01a903c" LastKnownName="Join1" />
+                <elementDefinition Id="90c2c1bb-0cff-4860-a563-b72b89f09da4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <callBehaviorAction Id="8b5f1f0e-5b67-4b91-965a-b6c797242971" name="Listar Contratos" isLeaf="false">
+            <elementDefinition Id="2d0a4b99-e685-4758-8d2f-5bd566a717de" />
+            <flowNodeTargets>
+              <controlFlow Id="22b66acc-0843-4383-b605-2238b396fc71" isLeaf="false">
+                <joinNodeMoniker Id="f1cd06ee-d771-49fb-8251-78c7a01a903c" LastKnownName="Join1" />
+                <elementDefinition Id="8f57ef4f-b1a9-40f9-80d8-eb3e5d34c5b2" />
               </controlFlow>
             </flowNodeTargets>
           </callBehaviorAction>

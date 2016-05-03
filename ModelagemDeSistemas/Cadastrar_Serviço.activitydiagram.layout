@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Configurar_Serviços">
+  <activityRootModelMoniker Id="a7d570fa-a420-4fcf-932f-0ff137278e77" />
+  <nestedChildShapes>
+    <initialNodeShape Id="e9d53246-4ba0-47f3-9dd0-059074a9b230" absoluteBounds="3.875, 0.875, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="a57c0820-9123-461d-903a-67c953197a8f" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <actionShape Id="71566719-8d92-4e69-9f79-f6bae55d6715" absoluteBounds="3.375, 2, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="0063d4ae-06d7-4b68-b52b-7b9b7f61c132" LastKnownName="Visualizar Serviços Cadastrados" />
+    </actionShape>
+    <actionShape Id="9fcdaec4-5df1-4d57-b54f-7c22ec9f848e" absoluteBounds="3.375, 3.5, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="ca9e3563-01b6-4b5f-9124-cfe7e883224e" LastKnownName="Cadastrar Novo Serviço" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(3.9375 : 2.375); (3.9375 : 3.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="60ca9043-02cd-48ea-8900-b8e49bbbf287" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="71566719-8d92-4e69-9f79-f6bae55d6715" />
+        <actionShapeMoniker Id="9fcdaec4-5df1-4d57-b54f-7c22ec9f848e" />
+      </nodes>
+    </controlFlowConnector>
+    <decisionNodeShape Id="11b1de12-08e0-4a90-9ab0-14f71d4eb7e0" absoluteBounds="3.75, 4.625, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="363ef1e1-b3f1-4a9b-9681-c785f72643dd" LastKnownName="Decision1" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <controlFlowConnector edgePoints="[(3.9375 : 3.875); (3.9375 : 4.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="747074ef-d385-4dc2-b268-58bef7c2709b" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="9fcdaec4-5df1-4d57-b54f-7c22ec9f848e" />
+        <decisionNodeShapeMoniker Id="11b1de12-08e0-4a90-9ab0-14f71d4eb7e0" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4.10625 : 4.79375); (4.875 : 4.79375); (4.875 : 3.64147727272727); (4.5 : 3.64147727272727)]" manuallyRouted="true" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <controlFlowMoniker Id="45eaef94-87a6-4865-bc8b-0e6e3ef48aa6" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="11b1de12-08e0-4a90-9ab0-14f71d4eb7e0" />
+        <actionShapeMoniker Id="9fcdaec4-5df1-4d57-b54f-7c22ec9f848e" />
+      </nodes>
+    </controlFlowConnector>
+    <callBehaviorActionShape Id="39421f95-f024-469a-83c2-c9efc9373c8c" absoluteBounds="3.375, 6.375, 1.125, 0.5" customColor="161, 199, 231">
+      <callBehaviorActionMoniker Id="480d083a-0722-48e4-b8ad-ef2964a00c5d" LastKnownName="Editar Serviço" />
+    </callBehaviorActionShape>
+    <activityFinalNodeShape Id="2aeb96ca-6cb4-480b-88be-98c4fbd06b67" absoluteBounds="3.875, 7.375, 0.125, 0.125" customColor="89, 89, 89">
+      <activityFinalNodeMoniker Id="d9e99e64-a1a6-4456-8ea6-25c9a833fd24" LastKnownName="ActivityFinal1" />
+    </activityFinalNodeShape>
+    <controlFlowConnector edgePoints="[(3.9375 : 6.875); (3.9375 : 7.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="868c1060-9b04-4a2e-af7b-fe4fcf2c591b" />
+      <relativeChildShapes />
+      <nodes>
+        <callBehaviorActionShapeMoniker Id="39421f95-f024-469a-83c2-c9efc9373c8c" />
+        <activityFinalNodeShapeMoniker Id="2aeb96ca-6cb4-480b-88be-98c4fbd06b67" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.9375 : 1); (3.9375 : 2)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="bb2cd400-9fd1-4fcc-b7b7-c7c4ff057aae" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="e9d53246-4ba0-47f3-9dd0-059074a9b230" />
+        <actionShapeMoniker Id="71566719-8d92-4e69-9f79-f6bae55d6715" />
+      </nodes>
+    </controlFlowConnector>
+    <actionShape Id="3350ddab-cdc2-4ebe-b814-bc27308cdd07" absoluteBounds="3.375, 5.625, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="90723a79-b14c-4358-909a-de61e7dddf53" LastKnownName="Salvar Serviço" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(3.9375 : 5); (3.9375 : 5.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="8d089a85-86f2-4d3a-9a33-9a158abed6e6" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="11b1de12-08e0-4a90-9ab0-14f71d4eb7e0" />
+        <actionShapeMoniker Id="3350ddab-cdc2-4ebe-b814-bc27308cdd07" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.9375 : 6); (3.9375 : 6.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="efb44446-856f-4215-a6a6-a2416f128dc5" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="3350ddab-cdc2-4ebe-b814-bc27308cdd07" />
+        <callBehaviorActionShapeMoniker Id="39421f95-f024-469a-83c2-c9efc9373c8c" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

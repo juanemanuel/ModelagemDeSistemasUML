@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b9447a67-88aa-4187-8801-af5394268672" name="Apagar_Serviço" linkedPackageId="57035a8e-1872-49c3-87b2-82fb3e46e4b8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="b9236c2f-053c-4ae5-9317-a855f81147ed">
+      <profileInstance Id="ddbdb361-8b4f-4f41-b071-bc358239a56d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3e3a34a2-e7d4-42b1-ab56-dd559d06e154">
+      <profileInstance Id="ef4b928d-8057-4eb5-b2c9-d91b8097bcbd" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="daf97ad8-6222-451f-8bde-345fceb1e720" name="Apagar_Serviço" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="30f55fa3-9d62-4d96-ace7-e172151d3ec9" />
+        <nodes>
+          <initialNode Id="ac6f6674-9db7-4887-a506-39c02865190c" name="Initial1" isLeaf="false">
+            <elementDefinition Id="a0d2f85a-2c53-49fd-b7d6-1c67a1d9b02e" />
+            <flowNodeTargets>
+              <controlFlow Id="052d2b49-0733-4a61-850c-55554df6795e" isLeaf="false">
+                <opaqueActionMoniker Id="442bba9c-5ecb-4e14-8ff3-98b3598e0513" LastKnownName="Visualizar Serviços Cadastrados" />
+                <elementDefinition Id="4f6d3e81-3fe7-492c-aa91-5b52eac866de" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="442bba9c-5ecb-4e14-8ff3-98b3598e0513" name="Visualizar Serviços Cadastrados" isLeaf="false">
+            <elementDefinition Id="8b759caa-4fca-40e9-800b-32e14e465d94" />
+            <flowNodeTargets>
+              <controlFlow Id="cb95c142-6120-488d-8311-976dd569257a" isLeaf="false">
+                <opaqueActionMoniker Id="9fb33de6-ed9e-4080-87e6-2cb96c7dac0d" LastKnownName="Selecionar Serviço" />
+                <elementDefinition Id="7c8bb233-9243-4a2d-b5f6-f0267efd543f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="6dbe7b25-3806-4c9c-a13a-a77b54be826a" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="d5a6b39f-cf8e-43a9-adff-7ec208c79d45" />
+          </activityFinalNode>
+          <opaqueAction Id="c548542b-b9b7-4ea9-b1f4-ce2841e51189" name="Apagar Serviço" isLeaf="false">
+            <elementDefinition Id="3e4a39ec-444d-4d5d-9ace-fc5ed5b9eea3" />
+            <flowNodeTargets>
+              <controlFlow Id="dcec83f8-13eb-430e-bf4b-dd8b95722441" isLeaf="false">
+                <activityFinalNodeMoniker Id="6dbe7b25-3806-4c9c-a13a-a77b54be826a" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="be2f8638-a823-487f-bcc3-8db55c1c3d2e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9fb33de6-ed9e-4080-87e6-2cb96c7dac0d" name="Selecionar Serviço" isLeaf="false">
+            <elementDefinition Id="0fc541a9-5d82-4ccd-a722-4aee465ee44e" />
+            <flowNodeTargets>
+              <controlFlow Id="862a6294-8f10-4d96-b9cd-248b028857f7" isLeaf="false">
+                <decisionNodeMoniker Id="1266867d-3904-4a88-a298-3e41ab7fdea5" LastKnownName="Decision1" />
+                <elementDefinition Id="a9369d21-a451-4395-a9f1-e26e3bdb45f1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="1266867d-3904-4a88-a298-3e41ab7fdea5" name="Decision1" isLeaf="false">
+            <elementDefinition Id="fa701573-5c59-4028-8054-e6d1fcc9e439" />
+            <flowNodeTargets>
+              <controlFlow Id="d2dc2bb2-852a-42df-a9b0-51333c45f572" guard="Confirmado" isLeaf="false">
+                <opaqueActionMoniker Id="c548542b-b9b7-4ea9-b1f4-ce2841e51189" LastKnownName="Apagar Serviço" />
+                <elementDefinition Id="e4b453a9-7ba5-4382-80b1-eb2af390881c" />
+              </controlFlow>
+              <controlFlow Id="47c4e10e-c4c0-46f0-aa85-2e63a181527c" guard="Else" isLeaf="false">
+                <opaqueActionMoniker Id="442bba9c-5ecb-4e14-8ff3-98b3598e0513" LastKnownName="Visualizar Serviços Cadastrados" />
+                <elementDefinition Id="43c4c9c2-3720-4c93-83b9-b55a8f687552" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="57035a8e-1872-49c3-87b2-82fb3e46e4b8" name="ModelagemDeSistemas">
+    <elementDefinition Id="a643e59f-cc81-4c6c-a880-f7dd110204db" />
+  </package>
+</activityRootModel>

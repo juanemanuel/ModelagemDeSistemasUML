@@ -22,6 +22,34 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Aceitar_Contrato.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Aceitar_Contrato.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Aceitar_Contrato.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Apagar_Serviço.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Apagar_Serviço.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Apagar_Serviço.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Cadastrar_Serviço.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Cadastrar_Serviço.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Cadastrar_Serviço.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Editar_Serviço.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Editar_Serviço.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Editar_Serviço.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="Iniciar_Conversa.activitydiagram">
       <SubType>Content</SubType>
     </Content>
@@ -57,6 +85,13 @@
     <Content Include="DiagramaDeAutenticação.activitydiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>DiagramaDeAutenticação.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Listar_Contratos.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Listar_Contratos.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Listar_Contratos.activitydiagram</DependentUpon>
     </Content>
     <Content Include="Listar_Serviços.activitydiagram">
       <SubType>Content</SubType>
