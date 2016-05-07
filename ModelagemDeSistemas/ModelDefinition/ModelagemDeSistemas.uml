@@ -582,7 +582,7 @@
     <packageHasNamedElement>
       <activity
         Id="aa521192-90cf-4f3b-8793-c1f7d7771e1f"
-        name="DA_SistemaTodo"
+        name="Contratar_Serviço"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false"
@@ -632,10 +632,10 @@
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="009e5e46-b95c-47ca-953b-a2e1a5fcdf53"
+                Id="f1dc0390-79a4-41e7-a85d-7d01a312e3bf"
                 isLeaf="false">
                 <decisionNodeMoniker
-                  Id="1171b621-756f-409f-aaee-4ef5a05fe50a"
+                  Id="5a089ed2-08f9-486e-b18e-50f225263652"
                   LastKnownName="Decision1"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
@@ -656,31 +656,6 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <decisionNode
-            Id="1171b621-756f-409f-aaee-4ef5a05fe50a"
-            name="Decision1"
-            isLeaf="false">
-            <flowNodeTargets>
-              <controlFlow
-                Id="e760473b-3dc3-46d3-9309-51609a2f8de2"
-                guard="Else"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="7c5b3b7b-f9b1-4ccb-be80-5b6f6f30976f"
-                  LastKnownName="Solicitar Serviço"
-                  LastKnownLocation="ModelagemDeSistemas.uml" />
-              </controlFlow>
-              <controlFlow
-                Id="1d6c0216-350e-44bc-b3cf-25a5288e32ba"
-                guard="Solicitou Inicio de Conversa"
-                isLeaf="false">
-                <callBehaviorActionMoniker
-                  Id="e491646f-7d79-4939-b87d-343cb66d11d6"
-                  LastKnownName="Iniciar Conversa"
-                  LastKnownLocation="ModelagemDeSistemas.uml" />
-              </controlFlow>
-            </flowNodeTargets>
-          </decisionNode>
           <sendSignalAction
             Id="cf1a2c8d-126e-4f24-9138-418f24cf90ad"
             name="Notificar Fornecedor"
@@ -756,19 +731,15 @@
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="4319e808-b8cd-44c1-ae94-7f8fa6c2ef27"
+                Id="66f14cbb-c056-4964-a000-707f47415f0a"
                 isLeaf="false">
-                <activityFinalNodeMoniker
-                  Id="9b61d859-1539-4f03-bab2-73b8fd616fa5"
-                  LastKnownName="ActivityFinal1"
+                <callBehaviorActionMoniker
+                  Id="de2d9d72-9d98-40ee-9072-6afcf6b22f3a"
+                  LastKnownName="Efetuar Pagamento"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <activityFinalNode
-            Id="9b61d859-1539-4f03-bab2-73b8fd616fa5"
-            name="ActivityFinal1"
-            isLeaf="false" />
           <callBehaviorAction
             Id="ec0bb878-dfab-440b-bded-82ee6c2bb9da"
             name="Listar Serviços"
@@ -853,6 +824,56 @@
                 LastKnownLocation="ModelagemDeSistemas.uml" />
             </behavior>
           </callBehaviorAction>
+          <callBehaviorAction
+            Id="de2d9d72-9d98-40ee-9072-6afcf6b22f3a"
+            name="Efetuar Pagamento"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7000fb49-4a49-4d08-9277-a9fa23e01356"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a7fc4e6b-0dfb-454f-b0b8-98a3c94dd220"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <behavior>
+              <activityMoniker
+                Id="09994342-67f3-4dc4-ba81-34124ab09180"
+                LastKnownName="Efetuar_Pagamento"
+                LastKnownLocation="ModelagemDeSistemas.uml" />
+            </behavior>
+          </callBehaviorAction>
+          <decisionNode
+            Id="5a089ed2-08f9-486e-b18e-50f225263652"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e1595641-e6ae-4600-8bdb-46e2ee576c45"
+                guard="Solicitou Inicio de Conversa"
+                isLeaf="false">
+                <callBehaviorActionMoniker
+                  Id="e491646f-7d79-4939-b87d-343cb66d11d6"
+                  LastKnownName="Iniciar Conversa"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="76103261-913c-4787-a258-a484d3b6401c"
+                guard="Else"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7c5b3b7b-f9b1-4ccb-be80-5b6f6f30976f"
+                  LastKnownName="Solicitar Serviço"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="a7fc4e6b-0dfb-454f-b0b8-98a3c94dd220"
+            name="ActivityFinal1"
+            isLeaf="false" />
         </nodes>
       </activity>
     </packageHasNamedElement>
@@ -1696,6 +1717,247 @@
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="09994342-67f3-4dc4-ba81-34124ab09180"
+        name="Efetuar_Pagamento"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="ae989ba9-5ce9-4757-a1d8-62f40d1b2bc2"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8d869004-67c7-4ff0-8c6d-a8a240f32180"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="282ded4f-bb97-4bc6-b000-8cb9f9933d6a"
+                  LastKnownName="Efetuar Pagamento"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="0a75cdf6-aaf1-481a-8b38-d9665b5f8a22"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="282ded4f-bb97-4bc6-b000-8cb9f9933d6a"
+            name="Efetuar Pagamento"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="aa35d7ce-df0a-4465-8d27-ff878a22f30e"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="159af29b-dd67-47de-b078-44dfac97a9fa"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="159af29b-dd67-47de-b078-44dfac97a9fa"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ba06a4fe-7c36-4117-ac91-6326a6fea94f"
+                guard="Serviço com Problemas"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b4627221-9722-47cd-8e2a-22cc5c46ce32"
+                  LastKnownName="Efetuar Reclamação"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="95a31b39-0058-4412-9219-bcf3c32544ac"
+                guard="Serviço Finalizado"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f8a4e88c-32ce-4e60-af04-d7643e750872"
+                  LastKnownName="Efetuar Pagamento ao Prestador de Serviços"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="f8a4e88c-32ce-4e60-af04-d7643e750872"
+            name="Efetuar Pagamento ao Prestador de Serviços"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ad712dcc-e2fe-4535-a8f8-0d02d8ca1594"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="87331e75-8830-4346-8309-9f59bff57bdb"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b4627221-9722-47cd-8e2a-22cc5c46ce32"
+            name="Efetuar Reclamação"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0d68135c-6364-4b89-ac4f-2a0115c64465"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="deb6546f-af29-45ea-840e-31eb74d73b4b"
+                  LastKnownName="Avaliar Reclamação"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="deb6546f-af29-45ea-840e-31eb74d73b4b"
+            name="Avaliar Reclamação"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9e96fc48-e9cc-4dee-aecd-5c66a0072761"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="13d74f9e-0e47-4d30-ada9-3a976bb155b8"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="00c39ddf-b2dc-4cd7-87f7-35dcc7afbf45"
+            name="Devolver dinheiro ao cliente"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f0649f47-2edd-43f4-ab3c-7b385eb32143"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="87331e75-8830-4346-8309-9f59bff57bdb"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="13d74f9e-0e47-4d30-ada9-3a976bb155b8"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f8452564-945c-4eb3-9858-a80cf480ad73"
+                guard="Problema Resolvido"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f8a4e88c-32ce-4e60-af04-d7643e750872"
+                  LastKnownName="Efetuar Pagamento ao Prestador de Serviços"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="df529756-7f23-4770-9ca9-75f6e9bb1e84"
+                guard="Else"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="00c39ddf-b2dc-4cd7-87f7-35dcc7afbf45"
+                  LastKnownName="Devolver dinheiro ao cliente"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="d7fba525-a9ca-4877-a306-0ba6ff152cb0"
+            name="Avaliar Prestador"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cbc479fe-b539-4fd7-b682-a2560bf20d2a"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="b60a2a9b-6bbd-4ce1-86e2-c128cfd2ea22"
+                  LastKnownName="Join1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d32daa56-0b92-4ba8-8478-4d693b690443"
+            name="Avaliar Cliente"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7346cd63-7e61-4873-a63f-f7f3c1979493"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="b60a2a9b-6bbd-4ce1-86e2-c128cfd2ea22"
+                  LastKnownName="Join1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="e23a67e1-e036-4032-a4fa-c6ccc8932d04"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7ac6b3b7-74bf-4fb6-9510-a1d9c74e4a92"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d7fba525-a9ca-4877-a306-0ba6ff152cb0"
+                  LastKnownName="Avaliar Prestador"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="554ea01b-9ab8-4666-8774-dc682a578769"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d32daa56-0b92-4ba8-8478-4d693b690443"
+                  LastKnownName="Avaliar Cliente"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <joinNode
+            Id="b60a2a9b-6bbd-4ce1-86e2-c128cfd2ea22"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5e2dde52-3320-4d10-abf4-74c07bf39b40"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="0a75cdf6-aaf1-481a-8b38-d9665b5f8a22"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <mergeNode
+            Id="87331e75-8830-4346-8309-9f59bff57bdb"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8ceff0dd-60a0-487a-8e21-78eacc3d3c8f"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="e23a67e1-e036-4032-a4fa-c6ccc8932d04"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
         </nodes>
       </activity>
     </packageHasNamedElement>

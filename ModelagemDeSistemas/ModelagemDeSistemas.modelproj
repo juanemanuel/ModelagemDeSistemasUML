@@ -50,6 +50,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Editar_Serviço.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="Efetuar_Pagamento.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Efetuar_Pagamento.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Efetuar_Pagamento.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="Iniciar_Conversa.activitydiagram">
       <SubType>Content</SubType>
     </Content>
@@ -58,26 +65,12 @@
       <DependentUpon>Iniciar_Conversa.activitydiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
-    <Content Include="Cliente.activitydiagram">
+    <Content Include="Contratar_Serviço.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Cliente.activitydiagram.layout">
+    <Content Include="Contratar_Serviço.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Cliente.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="Cliente_ContratarServiço.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Cliente_ContratarServiço.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Cliente_ContratarServiço.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="DA_SistemaTodo.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="DA_SistemaTodo.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>DA_SistemaTodo.activitydiagram</DependentUpon>
+      <DependentUpon>Contratar_Serviço.activitydiagram</DependentUpon>
     </Content>
     <Content Include="DiagramaDeAutenticação.activitydiagram">
       <SubType>Content</SubType>

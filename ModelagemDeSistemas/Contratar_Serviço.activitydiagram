@@ -1,22 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8b9d5967-6757-41bd-b329-8223c3bc5e3f" name="DA_SistemaTodo" linkedPackageId="c4726731-4d0d-4981-848b-783c699e7f8f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="4f8d54b4-78d2-4a49-ac80-085730188a46">
-      <profileInstance Id="4620efd9-bd97-4a49-9c69-3fb965cf2f7e" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="36b36a88-8fe7-4e1f-a14f-ea5857fcb7fe">
-      <profileInstance Id="9781fbe0-fd7c-40c5-aa8f-a6b9ef5c30ee" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8b9d5967-6757-41bd-b329-8223c3bc5e3f" name="Contratar_Serviço" linkedPackageId="c4726731-4d0d-4981-848b-783c699e7f8f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
-      <activity Id="2e89b287-6a88-4c1e-98ea-e4d472dc3286" name="DA_SistemaTodo" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+      <activity Id="2e89b287-6a88-4c1e-98ea-e4d472dc3286" name="Contratar_Serviço" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
         <elementDefinition Id="aa521192-90cf-4f3b-8793-c1f7d7771e1f" />
         <nodes>
           <initialNode Id="f8ab0e6c-67a7-42e9-a0c8-e20b5e517aa8" name="Initial1" isLeaf="false">
@@ -40,9 +26,9 @@
           <opaqueAction Id="9e61b01d-f09b-44d4-aff9-85bb9e020f62" name="Visualizar Serviço" isLeaf="false">
             <elementDefinition Id="92a40b06-04db-405c-bfe4-17845f2d0c98" />
             <flowNodeTargets>
-              <controlFlow Id="60900209-7064-495c-ac65-3c58c6b30663" isLeaf="false">
-                <decisionNodeMoniker Id="51525269-f998-4b25-b233-a7e23599c830" LastKnownName="Decision1" />
-                <elementDefinition Id="009e5e46-b95c-47ca-953b-a2e1a5fcdf53" />
+              <controlFlow Id="d003fb76-30cb-4744-a21f-b6932df2acea" isLeaf="false">
+                <decisionNodeMoniker Id="a915cc89-bf5e-4ca5-9fda-503dcd588885" LastKnownName="Decision1" />
+                <elementDefinition Id="f1dc0390-79a4-41e7-a85d-7d01a312e3bf" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -55,19 +41,6 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <decisionNode Id="51525269-f998-4b25-b233-a7e23599c830" name="Decision1" isLeaf="false">
-            <elementDefinition Id="1171b621-756f-409f-aaee-4ef5a05fe50a" />
-            <flowNodeTargets>
-              <controlFlow Id="e2ee5d99-6a01-4d1b-8aea-5a9f34e1c3f3" guard="Else" isLeaf="false">
-                <opaqueActionMoniker Id="d7ca823e-12e2-4371-8813-73f9d34e888a" LastKnownName="Solicitar Serviço" />
-                <elementDefinition Id="e760473b-3dc3-46d3-9309-51609a2f8de2" />
-              </controlFlow>
-              <controlFlow Id="5bb72360-efa0-450b-b4d1-4e259b92a7e4" guard="Solicitou Inicio de Conversa" isLeaf="false">
-                <callBehaviorActionMoniker Id="fb9aa8f5-da72-426f-86ec-3b2bb02f3a4d" LastKnownName="Iniciar Conversa" />
-                <elementDefinition Id="1d6c0216-350e-44bc-b3cf-25a5288e32ba" />
-              </controlFlow>
-            </flowNodeTargets>
-          </decisionNode>
           <sendSignalAction Id="4ab47b0d-5b5a-41f0-a217-78361e8c852c" name="Notificar Fornecedor" isLeaf="false">
             <elementDefinition Id="cf1a2c8d-126e-4f24-9138-418f24cf90ad" />
             <flowNodeTargets>
@@ -111,15 +84,12 @@
           <opaqueAction Id="292f2a0d-1140-4102-96b0-501b3b768e0f" name="Visualizar Contrato" isLeaf="false">
             <elementDefinition Id="2756bb61-690a-4504-a012-e69eeb5f2aca" />
             <flowNodeTargets>
-              <controlFlow Id="6b83fcc3-0767-4f24-b8a4-6d64dcb7b348" isLeaf="false">
-                <activityFinalNodeMoniker Id="fa1249bc-6068-4b01-b824-1a5d8290a514" LastKnownName="ActivityFinal1" />
-                <elementDefinition Id="4319e808-b8cd-44c1-ae94-7f8fa6c2ef27" />
+              <controlFlow Id="91dac85a-aac1-41f6-8743-ee219110f044" isLeaf="false">
+                <callBehaviorActionMoniker Id="c00e5603-cc6f-42f8-898b-15596ffbf30f" LastKnownName="Efetuar Pagamento" />
+                <elementDefinition Id="66f14cbb-c056-4964-a000-707f47415f0a" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <activityFinalNode Id="fa1249bc-6068-4b01-b824-1a5d8290a514" name="ActivityFinal1" isLeaf="false">
-            <elementDefinition Id="9b61d859-1539-4f03-bab2-73b8fd616fa5" />
-          </activityFinalNode>
           <callBehaviorAction Id="0ff74651-424f-4072-8aba-7a1adc908ff3" name="Listar Serviços" isLeaf="false">
             <elementDefinition Id="ec0bb878-dfab-440b-bded-82ee6c2bb9da" />
             <flowNodeTargets>
@@ -156,11 +126,50 @@
               </controlFlow>
             </flowNodeTargets>
           </callBehaviorAction>
+          <callBehaviorAction Id="c00e5603-cc6f-42f8-898b-15596ffbf30f" name="Efetuar Pagamento" isLeaf="false">
+            <elementDefinition Id="de2d9d72-9d98-40ee-9072-6afcf6b22f3a" />
+            <flowNodeTargets>
+              <controlFlow Id="d4b5bbaf-d25d-44d6-a2b2-9b9dd78269e2" isLeaf="false">
+                <activityFinalNodeMoniker Id="db7a8bae-1fbc-4b1c-91cd-7538e1d981fd" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="7000fb49-4a49-4d08-9277-a9fa23e01356" />
+              </controlFlow>
+            </flowNodeTargets>
+          </callBehaviorAction>
+          <decisionNode Id="a915cc89-bf5e-4ca5-9fda-503dcd588885" name="Decision1" isLeaf="false">
+            <elementDefinition Id="5a089ed2-08f9-486e-b18e-50f225263652" />
+            <flowNodeTargets>
+              <controlFlow Id="be0444ea-4ffa-4849-85cf-5aae81b2c112" guard="Solicitou Inicio de Conversa" isLeaf="false">
+                <callBehaviorActionMoniker Id="fb9aa8f5-da72-426f-86ec-3b2bb02f3a4d" LastKnownName="Iniciar Conversa" />
+                <elementDefinition Id="e1595641-e6ae-4600-8bdb-46e2ee576c45" />
+              </controlFlow>
+              <controlFlow Id="24b21fb3-d595-4e90-a4a2-6ce0d610c26b" guard="Else" isLeaf="false">
+                <opaqueActionMoniker Id="d7ca823e-12e2-4371-8813-73f9d34e888a" LastKnownName="Solicitar Serviço" />
+                <elementDefinition Id="76103261-913c-4787-a258-a484d3b6401c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="db7a8bae-1fbc-4b1c-91cd-7538e1d981fd" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="a7fc4e6b-0dfb-454f-b0b8-98a3c94dd220" />
+          </activityFinalNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
   </packagedElements>
   <package Id="c4726731-4d0d-4981-848b-783c699e7f8f" name="ModelagemDeSistemas">
     <elementDefinition Id="a643e59f-cc81-4c6c-a880-f7dd110204db" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4f8d54b4-78d2-4a49-ac80-085730188a46">
+        <profileInstance Id="4620efd9-bd97-4a49-9c69-3fb965cf2f7e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="36b36a88-8fe7-4e1f-a14f-ea5857fcb7fe">
+        <profileInstance Id="9781fbe0-fd7c-40c5-aa8f-a6b9ef5c30ee" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>
