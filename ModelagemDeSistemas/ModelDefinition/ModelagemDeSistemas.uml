@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="a643e59f-cc81-4c6c-a880-f7dd110204db"
   name="ModelagemDeSistemas" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -615,7 +615,7 @@
                 isLeaf="false">
                 <callBehaviorActionMoniker
                   Id="ec0bb878-dfab-440b-bded-82ee6c2bb9da"
-                  LastKnownName="Listar Serviços"
+                  LastKnownName="Listar Prestadores Serviços"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -628,7 +628,7 @@
           </callBehaviorAction>
           <opaqueAction
             Id="92a40b06-04db-405c-bfe4-17845f2d0c98"
-            name="Visualizar Serviço"
+            name="Visualizar Prestador de Serviços"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -689,7 +689,7 @@
                 isLeaf="false">
                 <callBehaviorActionMoniker
                   Id="2d0a4b99-e685-4758-8d2f-5bd566a717de"
-                  LastKnownName="Listar Contratos"
+                  LastKnownName="Listar Solicitações de Serviço"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -705,7 +705,7 @@
                 isLeaf="false">
                 <callBehaviorActionMoniker
                   Id="bcda37d3-36ea-4f79-8106-41ab646ea586"
-                  LastKnownName="Aceitar Contrato"
+                  LastKnownName="Aceitar Solicitação de Serviço"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -716,18 +716,18 @@
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="f3a41462-cf33-497a-9201-a5f4853354d8"
+                Id="64e6d3d1-a924-4503-bb77-4d80f4005d8f"
                 isLeaf="false">
-                <opaqueActionMoniker
-                  Id="2756bb61-690a-4504-a012-e69eeb5f2aca"
-                  LastKnownName="Visualizar Contrato"
+                <decisionNodeMoniker
+                  Id="cbaaab85-03af-4cc1-8f37-df5dd2469e72"
+                  LastKnownName="Decision2"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
           </joinNode>
           <opaqueAction
             Id="2756bb61-690a-4504-a012-e69eeb5f2aca"
-            name="Visualizar Contrato"
+            name="Visualizar Solicitações de Serviço"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -742,7 +742,7 @@
           </opaqueAction>
           <callBehaviorAction
             Id="ec0bb878-dfab-440b-bded-82ee6c2bb9da"
-            name="Listar Serviços"
+            name="Listar Prestadores Serviços"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -750,14 +750,14 @@
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="92a40b06-04db-405c-bfe4-17845f2d0c98"
-                  LastKnownName="Visualizar Serviço"
+                  LastKnownName="Visualizar Prestador de Serviços"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
             <behavior>
               <activityMoniker
                 Id="622db9a7-7424-449b-ad98-d1286f0cd2fb"
-                LastKnownName="Listar_Serviços"
+                LastKnownName="Listar_Prestadores"
                 LastKnownLocation="ModelagemDeSistemas.uml" />
             </behavior>
           </callBehaviorAction>
@@ -771,7 +771,7 @@
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="92a40b06-04db-405c-bfe4-17845f2d0c98"
-                  LastKnownName="Visualizar Serviço"
+                  LastKnownName="Visualizar Prestador de Serviços"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -784,7 +784,7 @@
           </callBehaviorAction>
           <callBehaviorAction
             Id="bcda37d3-36ea-4f79-8106-41ab646ea586"
-            name="Aceitar Contrato"
+            name="Aceitar Solicitação de Serviço"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -805,7 +805,7 @@
           </callBehaviorAction>
           <callBehaviorAction
             Id="2d0a4b99-e685-4758-8d2f-5bd566a717de"
-            name="Listar Contratos"
+            name="Listar Solicitações de Serviço"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -820,7 +820,7 @@
             <behavior>
               <activityMoniker
                 Id="684baba4-534c-48f8-8014-7fde8decd7df"
-                LastKnownName="Listar_Contratos"
+                LastKnownName="Listar_Solicitações"
                 LastKnownLocation="ModelagemDeSistemas.uml" />
             </behavior>
           </callBehaviorAction>
@@ -874,13 +874,53 @@
             Id="a7fc4e6b-0dfb-454f-b0b8-98a3c94dd220"
             name="ActivityFinal1"
             isLeaf="false" />
+          <decisionNode
+            Id="cbaaab85-03af-4cc1-8f37-df5dd2469e72"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fd109621-ed6e-4d4e-9beb-1425c047e806"
+                guard="Else"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2756bb61-690a-4504-a012-e69eeb5f2aca"
+                  LastKnownName="Visualizar Solicitações de Serviço"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="9f0c4a9f-6501-48c6-adec-9a8d03a9a4db"
+                guard="Solicitou Cancelamento"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6ba59bc6-7673-42f9-a382-6dc59eb6b19a"
+                  LastKnownName="Cancelar Solicitação de Serviço"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="6ba59bc6-7673-42f9-a382-6dc59eb6b19a"
+            name="Cancelar Solicitação de Serviço"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="58d0a5be-8dcc-4ef5-b8c4-1a18e97197ee"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a7fc4e6b-0dfb-454f-b0b8-98a3c94dd220"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <activity
         Id="622db9a7-7424-449b-ad98-d1286f0cd2fb"
-        name="Listar_Serviços"
+        name="Listar_Prestadores"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false"
@@ -898,14 +938,14 @@
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="a10c9cad-e871-450c-bf6d-4cff5e01886b"
-                  LastKnownName="Listar Todos os Serviços"
+                  LastKnownName="Listar Todos os Prestadores de Serviços"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
           <opaqueAction
             Id="a10c9cad-e871-450c-bf6d-4cff5e01886b"
-            name="Listar Todos os Serviços"
+            name="Listar Todos os Prestadores de Serviços"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -935,7 +975,7 @@
           </opaqueAction>
           <opaqueAction
             Id="cb8382b0-f89f-4f32-a4c3-d9d77e6e3459"
-            name="Listar Serviços Filtrados"
+            name="Listar Prestadores de Serviços Filtrados"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -959,7 +999,7 @@
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="a10c9cad-e871-450c-bf6d-4cff5e01886b"
-                  LastKnownName="Listar Todos os Serviços"
+                  LastKnownName="Listar Todos os Prestadores de Serviços"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
               <controlFlow
@@ -968,7 +1008,7 @@
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="cb8382b0-f89f-4f32-a4c3-d9d77e6e3459"
-                  LastKnownName="Listar Serviços Filtrados"
+                  LastKnownName="Listar Prestadores de Serviços Filtrados"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -1165,14 +1205,14 @@
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="1cdb64cb-5306-4024-96c9-80febd37d55d"
-                  LastKnownName="Visualizar Serviço"
+                  LastKnownName="Visualizar Solicitação de Serviço"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
           <opaqueAction
             Id="1cdb64cb-5306-4024-96c9-80febd37d55d"
-            name="Visualizar Serviço"
+            name="Visualizar Solicitação de Serviço"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -1192,27 +1232,36 @@
             <flowNodeTargets>
               <controlFlow
                 Id="e9198b84-89af-4853-8026-38b4914aed7d"
-                guard="Contrato Aceito"
+                guard="Solicitação de Serviço Aceita"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="7422d6a1-4ffd-4127-8be3-96fa662ce35d"
-                  LastKnownName="Aceitar Contrato"
+                  LastKnownName="Aceitar Solicitação de Serviço"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
               <controlFlow
                 Id="e284f3e3-0766-406c-9813-c1bb7b5f8a49"
-                guard="Else"
+                guard="Solicitação de Serviço Recusada"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="143c5b3b-6c11-4ab4-861b-ad2320a5ddab"
-                  LastKnownName="Recusar Contrato"
+                  LastKnownName="Recusar Solicitação de Serviço"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b28df582-15cf-4c96-9e5b-5151f050e3a0"
+                guard="Necessita Alteração de Dados"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f842293c-fa17-43c6-b028-b2ae336d70a4"
+                  LastKnownName="Alterar Solicitação de Serviço"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
           <opaqueAction
             Id="7422d6a1-4ffd-4127-8be3-96fa662ce35d"
-            name="Aceitar Contrato"
+            name="Aceitar Solicitação de Serviço"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -1227,7 +1276,7 @@
           </opaqueAction>
           <opaqueAction
             Id="143c5b3b-6c11-4ab4-861b-ad2320a5ddab"
-            name="Recusar Contrato"
+            name="Recusar Solicitação de Serviço"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -1250,14 +1299,14 @@
                 isLeaf="false">
                 <sendSignalActionMoniker
                   Id="334c4354-39c9-4a28-aced-239f5ebd18dc"
-                  LastKnownName="Enviar Notificação de Estado de Contrato"
+                  LastKnownName="Enviar Notificação de Estado de Solicitação de Serviço"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
           </mergeNode>
           <sendSignalAction
             Id="334c4354-39c9-4a28-aced-239f5ebd18dc"
-            name="Enviar Notificação de Estado de Contrato"
+            name="Enviar Notificação de Estado de Solicitação de Serviço"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -1265,14 +1314,14 @@
                 isLeaf="false">
                 <acceptEventActionMoniker
                   Id="57955f82-907f-4c45-ac80-185c19442290"
-                  LastKnownName="Mudar Estado do Contrato"
+                  LastKnownName="Mudar Estado da Solicitação de Serviço"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
           </sendSignalAction>
           <acceptEventAction
             Id="57955f82-907f-4c45-ac80-185c19442290"
-            name="Mudar Estado do Contrato"
+            name="Mudar Estado da Solicitação de Serviço"
             isLeaf="false"
             isUnmarshall="false">
             <flowNodeTargets>
@@ -1290,13 +1339,28 @@
             Id="0a4c3321-d359-46b3-9f94-80b6c89c8e74"
             name="ActivityFinal1"
             isLeaf="false" />
+          <opaqueAction
+            Id="f842293c-fa17-43c6-b028-b2ae336d70a4"
+            name="Alterar Solicitação de Serviço"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="508d6553-d59d-4c69-9916-438a7a297d8c"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="55eda769-0ed0-4f96-8cda-76a70b822dcf"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <activity
         Id="684baba4-534c-48f8-8014-7fde8decd7df"
-        name="Listar_Contratos"
+        name="Listar_Solicitações"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false"
@@ -1314,14 +1378,14 @@
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="d9a916be-1664-4795-b78f-4b53a70bb1c0"
-                  LastKnownName="Listar Todos os Contratos"
+                  LastKnownName="Listar Todas as Solicitações de Serviço"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
           <opaqueAction
             Id="d9a916be-1664-4795-b78f-4b53a70bb1c0"
-            name="Listar Todos os Contratos"
+            name="Listar Todas as Solicitações de Serviço"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -1329,14 +1393,14 @@
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="73e6ad12-0236-439e-975a-df5f7e354af3"
-                  LastKnownName="Filtrar Contratos"
+                  LastKnownName="Filtrar Solicitação de Serviço"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <opaqueAction
             Id="73e6ad12-0236-439e-975a-df5f7e354af3"
-            name="Filtrar Contratos"
+            name="Filtrar Solicitação de Serviço"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -1351,7 +1415,7 @@
           </opaqueAction>
           <opaqueAction
             Id="81589262-7093-4009-b46a-b8d051b1aefa"
-            name="Listar Contratos Filtrados"
+            name="Listar Solicitações de Serviço Filtradas"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -1379,7 +1443,7 @@
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="81589262-7093-4009-b46a-b8d051b1aefa"
-                  LastKnownName="Listar Contratos Filtrados"
+                  LastKnownName="Listar Solicitações de Serviço Filtradas"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
               <controlFlow
@@ -1388,7 +1452,7 @@
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="d9a916be-1664-4795-b78f-4b53a70bb1c0"
-                  LastKnownName="Listar Todos os Contratos"
+                  LastKnownName="Listar Todas as Solicitações de Serviço"
                   LastKnownLocation="ModelagemDeSistemas.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -1960,6 +2024,1874 @@
           </mergeNode>
         </nodes>
       </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="8aad3ca4-3b21-47d3-9cf8-13221b52cd1e"
+        name="Gerenciar_Outdoor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="6cf8395e-4055-497f-8d06-3577a9c2a5b1"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2da923f6-2e11-4fc3-87ae-97218cfc7d67"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1a3b35e6-3e22-46eb-9ee7-b101108e9875"
+                  LastKnownName="Criar Publicação"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="1a3b35e6-3e22-46eb-9ee7-b101108e9875"
+            name="Criar Publicação"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a4e88a0f-fd78-4a5f-9fab-594a501fcea6"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="69acbba4-a798-43ba-96c1-fbf04a282254"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3a93ff15-d399-4cd9-927a-f3bfcafae0a2"
+            name="Editar Publicação"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1e28e0ce-a087-46c0-8980-668a6e454ae6"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="65593838-9cd7-4ba5-a03b-42215e449f59"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e4aac45c-24c6-4178-9d50-ad2fd2dc40b1"
+            name="Apagar Publicação"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a66d4398-1d36-429c-87f9-16bfb509e264"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="65593838-9cd7-4ba5-a03b-42215e449f59"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1d232129-c64c-49d4-b16a-65b0302e2a2c"
+            name="Criar Comentário"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="edb17d00-4f8e-44ab-82bb-e7e2d647d435"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9a0dadc3-11b0-4d42-ac8f-5a1aa1116dd5"
+                  LastKnownName="Apagar Comentário"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9a0dadc3-11b0-4d42-ac8f-5a1aa1116dd5"
+            name="Apagar Comentário"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5f740870-b959-41a9-bc25-237a71e75be2"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="65593838-9cd7-4ba5-a03b-42215e449f59"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="65593838-9cd7-4ba5-a03b-42215e449f59"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="69acbba4-a798-43ba-96c1-fbf04a282254"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="aeb9c42b-45a7-4eab-8646-0986c8e9e041"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3a93ff15-d399-4cd9-927a-f3bfcafae0a2"
+                  LastKnownName="Editar Publicação"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f8447c95-bfa0-4e9d-a067-0a3f3fcce190"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1d232129-c64c-49d4-b16a-65b0302e2a2c"
+                  LastKnownName="Criar Comentário"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="114e6e71-e525-4648-93da-a704f88e40dd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e4aac45c-24c6-4178-9d50-ad2fd2dc40b1"
+                  LastKnownName="Apagar Publicação"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="0ff59e59-b2dc-4449-918b-a75ef2af904c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="622f53c4-ee44-46ee-9afb-e9d38142e6b8"
+                  LastKnownName="Compartilhar"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="622f53c4-ee44-46ee-9afb-e9d38142e6b8"
+            name="Compartilhar"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="81dfe86e-2612-495d-a7e6-91c9938e0c3b"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="65593838-9cd7-4ba5-a03b-42215e449f59"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelagemDeSistemas.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="2a2436c2-e27a-4923-801d-f2f95bb29a79"
+        name="Cliente"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="3af6fece-ce6c-49c0-859c-40110d013f88"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="aa03c6d9-1940-43b6-b9a3-07a644d067e3"
+              LastKnownName="Usuário"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="9e38b910-8887-4c3b-9dce-4d6aca0569dd"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Finalizar Serviço"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d40f3ff9-cf7d-4ae7-b8e8-a724a8c584c8"
+              LastKnownName="Finalizar Serviço"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="944997f8-c293-46ad-97d1-3463d34cde8b"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4778d2d7-a29e-4bdb-b0d9-031615b947e1"
+                  name="Finalizar Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f8029cf5-5740-4b24-850f-321c775efdfc"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Filtrar Prestadores de Serviço"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0aaa6860-8e01-42a7-aee6-01a29699c4ab"
+              LastKnownName="Filtrar Prestadores de Serviço"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4e97bf98-aa77-4f79-951e-587e0f0a55b0"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4733ced3-b81a-4761-91c5-48f134c710d2"
+                  name="Filtrar Prestadores de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7a6b8053-5593-4e76-b14f-832193b3f487"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Contratar Serviço"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="93e12fa4-7954-438e-98b6-2b5982b00b2c"
+              LastKnownName="Contratar Serviço"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="70d5d2f8-491c-471c-91e7-004320f60a26"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fe6db85c-7fde-4ab9-bf55-07cc074b729e"
+                  name="Contratar Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="aef418a3-230a-493c-832e-7a9a31ce33da"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Efetuar Reclamação"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5b769138-b973-488c-ae47-bfe31d99780c"
+              LastKnownName="Efetuar Reclamação"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="80360507-9f19-4222-add1-ea0c2e99fc83"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ce8aec7-1692-4571-9655-3f62b156f58d"
+                  name="Efetuar Reclamação"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fec604b4-7657-4b5a-a6a9-b6015490573c"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Enviar Fotos ao Prestador de Serviços"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6ce5875f-5a87-4670-a584-30e6a6edc8a0"
+              LastKnownName="Enviar Fotos ao Prestador de Serviços"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9aff7ef3-5666-4fe3-9d44-ced2e88fe431"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="da0b5965-c9bd-4dcc-bc1a-ada0be7ca3ef"
+                  name="Enviar Fotos ao Prestador de Serviços"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c9e8a516-5da3-4611-9064-38c5693e7726"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Enviar Mensagem de Texto ao Prestador de Serviços"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4c34ef55-ee50-40e7-9442-1562920e8c50"
+              LastKnownName="Enviar Mensagem de Texto ao Prestador de Serviços"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d79d753e-7f22-4e38-a04c-a53565623e69"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="57476d3a-59c5-4031-bd3d-0658d8e2ee24"
+                  name="Enviar Mensagem de Texto ao Prestador de Serviços"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="83af614d-ee39-4490-b759-62e4fff5e273"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Efetuar Pagamento"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b1de2606-4a5c-40f0-a327-02af70e5e3aa"
+              LastKnownName="Efetuar Pagamento"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="611709bd-c6cd-4ec7-9b6e-5e51572c5c7a"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="01dcdc47-6219-4542-b95a-1c107c80b663"
+                  name="Efetuar Pagamento"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7cd5ef9d-d417-465b-9874-b875c217094b"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Avaliar Prestador de Serviços"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="566bd241-8317-417c-81fa-2ef871e44bc7"
+              LastKnownName="Avaliar Prestador de Serviços"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="76b092ee-c79f-4164-b266-f5a90bc6f601"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3830ac89-e5ad-41ce-af73-2f5787e4d3d6"
+                  name="Avaliar Prestador de Serviços"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8fa340c9-d73e-4649-9778-608756045852"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Alterar Solicitação de Contrato"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7e1e20fe-8936-43b2-9fc2-398dd6d216fa"
+              LastKnownName="Alterar Solicitação de Contrato"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f75f3510-e8a9-4484-aaae-4a86810a8e46"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1654cc25-7345-4d81-85f8-4eed44b78323"
+                  name="Alterar Solicitação de Contrato"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="eb0b597d-452b-42ce-870d-3a75dfc8223d"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Avaliar Réplica de Reclamação"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="15abf555-0dc5-4a5f-8707-5f4fc1f7c44b"
+              LastKnownName="Avaliar Réplica de Reclamação"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cac23793-b085-4b7c-9c57-9a77b8b51161"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6b285c29-d346-43da-bfca-1a45efda2f5c"
+                  name="Avaliar Réplica de Reclamação"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f8ccc220-dce7-4d32-9092-f2e231fb923b"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Fazer Comentário de Prestador de Serviços"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="488fde5c-c7c7-4543-86a2-48c525c476fb"
+              LastKnownName="Fazer Comentário de Prestador de Serviços"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8c544202-61a5-4aad-b8a1-1e74b9264b5f"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="860dd5b7-08a0-411b-8938-66a87a2c7e34"
+                  name="Fazer Comentário de Prestador de Serviços"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fd595df7-8670-441a-a5d6-9f504d1d7a92"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Visualizar Solicitações Anteriores do Prestador de Serviços"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6420c6d4-eb73-46aa-83e2-e60484f2dd0a"
+              LastKnownName="Visualizar Solicitações Anteriores do Prestador de Serviços"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="68856562-3551-4478-9fa4-485de9780872"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4a3ecaa1-2f1c-4cf6-8018-fe97118236ce"
+                  name="Visualizar Solicitações Anteriores do Prestador de Serviços"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a45af3d6-b746-48c4-ba7f-c6bbf65cf488"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Cancelar Solicitação de Serviço"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a448dee6-46bf-446f-922e-a9b7d1b67791"
+              LastKnownName="Cancelar Solicitação de Serviço"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="77632530-8bcb-4558-ac8c-844bf7953f58"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56a788b8-060a-4903-b39a-1ae08a365fb0"
+                  name="Cancelar Solicitação de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="53401c13-8b6f-4b98-a2e8-e8952bf95a24"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Avaliar Alterações de Solicitação de Serviço "
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="43b03d3b-0565-4a1a-b5d0-296ce61c97a9"
+              LastKnownName="Avaliar Alterações de Solicitação de Serviço "
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f0bd121-12a7-4254-9eed-3d834b667bfb"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d2c3f963-2b67-4caa-a15b-576706534d34"
+                  name="Avaliar Alterações de Solicitação de Serviço "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1d152448-c385-4c42-bd81-9f49fb34cd99"
+        name="Realizar Cadastro no Sistema"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5d3d8b04-7a08-483c-a32b-a75e1423fbea"
+        name="Autenticar-se no Sistema"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0aaa6860-8e01-42a7-aee6-01a29699c4ab"
+        name="Filtrar Prestadores de Serviço"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="93e12fa4-7954-438e-98b6-2b5982b00b2c"
+        name="Contratar Serviço"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="9d82aa16-daf2-49db-a19f-29722f82698f"
+        name="Prestador de Serviço"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="5bace629-ed70-4148-8109-0af70eb98f93"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="aa03c6d9-1940-43b6-b9a3-07a644d067e3"
+              LastKnownName="Usuário"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="79d9dbf1-ed54-4c7a-a639-5d5865b6a3c7"
+            isDerived="false"
+            sourceEndRoleName="Prestador de Serviço"
+            targetEndRoleName="Enviar Mensagens de Texto ao Cliente"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1e099141-e71f-41cd-9000-91190f639382"
+              LastKnownName="Enviar Mensagens de Texto ao Cliente"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f5fadfe4-b874-400e-ac3c-980dd9ca1b96"
+                  name="Prestador de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="61dd0282-e84d-4fb1-b3d5-38c52cef1b54"
+                  name="Enviar Mensagens de Texto ao Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fd5e2a7d-3ac6-4ff3-8d3b-0d710830f94d"
+            isDerived="false"
+            sourceEndRoleName="Prestador de Serviço"
+            targetEndRoleName="Visualizar Solicitação de Serviço"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3ac9270b-ef29-4b50-9177-ac216f2a289f"
+              LastKnownName="Visualizar Solicitação de Serviço"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="58bb8ad2-fcb0-4f2c-9532-78b2807d656b"
+                  name="Prestador de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7818e370-f151-482b-8b25-deb6b7c87f39"
+                  name="Visualizar Solicitação de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cd63b8df-2513-462d-8d0c-38fbd971a743"
+            isDerived="false"
+            sourceEndRoleName="Prestador de Serviço"
+            targetEndRoleName="Enviar Fotos ao Cliente"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ba038c27-0311-4f26-8890-d392a0dd06dc"
+              LastKnownName="Enviar Fotos ao Cliente"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6c2291c4-6175-4670-a75d-c15c0c032f96"
+                  name="Prestador de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a3347ada-ef5f-4fcd-89be-d0f3c95d6dd1"
+                  name="Enviar Fotos ao Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b19b0d4c-5f55-457a-b291-2b4939657e05"
+            isDerived="false"
+            sourceEndRoleName="Prestador de Serviço"
+            targetEndRoleName="Visualizar Solicitações Anteriores do Cliente"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b1e9ffe9-6b5b-4513-87cc-23fc7f7526b9"
+              LastKnownName="Visualizar Solicitações Anteriores do Cliente"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4d6b123c-8e85-4a8e-be9b-8b214ed6fb26"
+                  name="Prestador de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="43a16553-2961-4af3-8827-ef92eac8ce5c"
+                  name="Visualizar Solicitações Anteriores do Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c1371c1f-8605-4895-971a-2428eefa2dda"
+            isDerived="false"
+            sourceEndRoleName="Prestador de Serviço"
+            targetEndRoleName="Avaliar Alterações de Solicitação de Serviço Feitas pelo Cliente"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9f031f94-01dc-4c5a-8f25-d5f5267f4db7"
+              LastKnownName="Avaliar Alterações de Solicitação de Serviço Feitas pelo Cliente"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0a3a5ed6-8784-4437-9b33-41473e924485"
+                  name="Prestador de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b65e3259-4582-40da-8485-61f7498817f4"
+                  name="Avaliar Alterações de Solicitação de Serviço Feitas pelo Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f21d18ff-1f48-4789-a3dc-caeefd1db774"
+            isDerived="false"
+            sourceEndRoleName="Prestador de Serviço"
+            targetEndRoleName="Efetuar Réplica de Reclamação"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="aea73221-9b20-435e-94a0-dbe37ae07497"
+              LastKnownName="Efetuar Réplica de Reclamação"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8492eecc-1af8-41eb-a2e2-1b8b9cd35e74"
+                  name="Prestador de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="670c506f-ece7-4fe6-9e6c-738a58b21f6d"
+                  name="Efetuar Réplica de Reclamação"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="567ad04d-e058-4663-ba10-04fd7b808542"
+            isDerived="false"
+            sourceEndRoleName="Prestador de Serviço"
+            targetEndRoleName="Fazer Comentário de Cliente"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d76360ef-f122-4b6f-b4a8-03d78d8b39e9"
+              LastKnownName="Fazer Comentário de Cliente"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8128bc2e-23f5-45da-ad42-c873649383a9"
+                  name="Prestador de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="279cf4ca-f8bb-44ba-be49-ed4baec5c6be"
+                  name="Fazer Comentário de Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1bc83d25-3370-4981-a5cd-b90d6eace259"
+            isDerived="false"
+            sourceEndRoleName="Prestador de Serviço"
+            targetEndRoleName="Avaliar Cliente"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="88a1a0e4-68de-425d-afa4-cc3bbe701458"
+              LastKnownName="Avaliar Cliente"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b864029a-66a5-41cb-a44b-c82fe9a99960"
+                  name="Prestador de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7b48b5a5-9ae5-4972-968c-33e527c6be35"
+                  name="Avaliar Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fb6bb5a6-0744-414c-b862-1def334d5348"
+            isDerived="false"
+            sourceEndRoleName="Prestador de Serviço"
+            targetEndRoleName="Cadastrar Serviço"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b2e7d2c5-16bc-4f79-82c2-539a1dc4c636"
+              LastKnownName="Cadastrar Serviço"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="67dba650-006c-4dc8-b566-19d324cb6d9c"
+                  name="Prestador de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3ad85ae8-aa15-4de0-b82c-350f8412044d"
+                  name="Cadastrar Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f4e511f4-542f-49d2-b29b-7d38985e58a2"
+            isDerived="false"
+            sourceEndRoleName="Prestador de Serviço"
+            targetEndRoleName="Solicitar Finalização de Serviço"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e2d24d4d-834b-4737-91ac-e28773d6ec78"
+              LastKnownName="Solicitar Finalização de Serviço"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="102ad6f0-15c4-4840-b61f-b8a5ee051c2e"
+                  name="Prestador de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b653b04d-ea36-4229-a28d-0f74ae87ffc7"
+                  name="Solicitar Finalização de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cd7414b3-02c0-4b6d-807e-38d467d82f86"
+            isDerived="false"
+            sourceEndRoleName="Prestador de Serviço"
+            targetEndRoleName="Apagar Publicação no Outdoor"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3ab6063e-9000-4e18-9698-4bee4b504939"
+              LastKnownName="Apagar Publicação no Outdoor"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4c8600f0-baeb-421c-b959-35c1efa5314b"
+                  name="Prestador de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1ca09c46-38e9-4c19-97bc-7200ea0c7ec4"
+                  name="Apagar Publicação no Outdoor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f66f96a7-012a-4b17-a79b-5773384afbfa"
+            isDerived="false"
+            sourceEndRoleName="Prestador de Serviço"
+            targetEndRoleName="Criar Publicação no Outdoor"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bb5cf611-04ff-4c32-b336-30c2a1f8f244"
+              LastKnownName="Criar Publicação no Outdoor"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="79d360b7-c548-4508-8740-c8aca54f055d"
+                  name="Prestador de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="53506773-9f2a-491e-ba69-62792ce3b773"
+                  name="Criar Publicação no Outdoor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="85f0555d-6c8e-4671-ae86-84a8c213a45c"
+            isDerived="false"
+            sourceEndRoleName="Prestador de Serviço"
+            targetEndRoleName="Editar Publicação no Outdoor"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d7c98258-44e2-4a27-b75e-1aa2b6eff2f8"
+              LastKnownName="Editar Publicação no Outdoor"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c6af5fbc-8e8d-47ec-b807-67420a2dd278"
+                  name="Prestador de Serviço"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cccb6ab2-93a7-4131-bb45-75785240ce04"
+                  name="Editar Publicação no Outdoor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="aa03c6d9-1940-43b6-b9a3-07a644d067e3"
+        name="Usuário"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="8c152d16-322f-4b50-93bd-0078fab9b795"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="Realizar Cadastro no Sistema"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1d152448-c385-4c42-bd81-9f49fb34cd99"
+              LastKnownName="Realizar Cadastro no Sistema"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18d71566-5498-4998-a1d1-6464be75f411"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b46f2d61-3f34-4502-b180-f17c359892ef"
+                  name="Realizar Cadastro no Sistema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="25edddd3-e12a-46a3-acd9-bcaa67257750"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="Realizar Cadastro no Sistema"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1d152448-c385-4c42-bd81-9f49fb34cd99"
+              LastKnownName="Realizar Cadastro no Sistema"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c51e7f3b-077a-4b5d-aa9f-aa42d014f535"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e2b7c4cb-39ce-48a6-83a2-3c7b1a783edf"
+                  name="Realizar Cadastro no Sistema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5ac10d98-5ef4-42d6-bfa6-a1dfdfd15d9d"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="Encerrar Conta"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f004b2cb-23c7-4791-acb3-d37ddbcec813"
+              LastKnownName="Encerrar Conta"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b2d93e43-1b26-4f30-acb0-98a6306ca595"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0f61fa17-e1aa-43fa-8ba0-90c0b1a0c547"
+                  name="Encerrar Conta"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="515474a9-3d67-48fb-870a-d0d9ecae1388"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="Visualizar Calendário"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="473f9287-a8c5-4657-bcca-43dec6c5af4d"
+              LastKnownName="Visualizar Calendário"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f09c4bc8-08b6-4bf8-bd2c-a24e5c45b2b6"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2f404da1-035d-4141-b395-90e328152192"
+                  name="Visualizar Calendário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2314a24d-e4d5-4216-b8f9-27bac4ddedfd"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="Autenticar-se no Sistema"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5d3d8b04-7a08-483c-a32b-a75e1423fbea"
+              LastKnownName="Autenticar-se no Sistema"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56da1dbc-ec70-48df-9592-737994de3af3"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bcb2dba1-575c-4f39-ae02-39a6d1c1192c"
+                  name="Autenticar-se no Sistema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e532bac0-a442-4648-b557-74bf4882bdc4"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="Apagar comentário de Publicação do Outdoor"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f9c1515d-4099-41a4-b319-52462bdd863e"
+              LastKnownName="Apagar comentário de Publicação do Outdoor"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="32cc454c-7c99-4ab3-aea5-c93318d2799b"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="152a1358-275b-4aa0-acf0-4c898e26560f"
+                  name="Apagar comentário de Publicação do Outdoor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="414d9d42-e000-462b-84cd-0c24662cd567"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="Comentar em Publicação do Outdoor"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="dfcaa225-eee1-4e03-bb0f-38c91ffee440"
+              LastKnownName="Comentar em Publicação do Outdoor"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e59f0f3c-a458-4b6f-bb59-553b89547d84"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8ac6646c-7416-4fa2-b567-b930e5be26fa"
+                  name="Comentar em Publicação do Outdoor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="24994856-5de8-434f-adc3-76cc1b373490"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="Enviar Foto em Publicação de Outdoor"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b213a6ae-7c06-4c2d-8129-d548a765b957"
+              LastKnownName="Enviar Foto em Publicação de Outdoor"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1ca3992e-25e1-4d42-93ea-1b381d13d1fa"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ef9523ab-5586-4d5e-ad12-5b24d245dd8d"
+                  name="Enviar Foto em Publicação de Outdoor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d1e9401d-2723-43ee-a720-f61075cf405f"
+            isDerived="false"
+            sourceEndRoleName="Usuário"
+            targetEndRoleName="Compartilhar Postagem do Outdoor no Facebook e Google+"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7b3d0a59-ff33-4a94-918d-56f4d36ea399"
+              LastKnownName="Compartilhar Postagem do Outdoor no Facebook e Google+"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18ec0c77-b99d-4d6f-8bd5-b64190c857b6"
+                  name="Usuário"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a6a12798-412c-4255-a486-280f14bf98b4"
+                  name="Compartilhar Postagem do Outdoor no Facebook e Google+"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4c34ef55-ee50-40e7-9442-1562920e8c50"
+        name="Enviar Mensagem de Texto ao Prestador de Serviços"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6ce5875f-5a87-4670-a584-30e6a6edc8a0"
+        name="Enviar Fotos ao Prestador de Serviços"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3ac9270b-ef29-4b50-9177-ac216f2a289f"
+        name="Visualizar Solicitação de Serviço"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1e099141-e71f-41cd-9000-91190f639382"
+        name="Enviar Mensagens de Texto ao Cliente"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ba038c27-0311-4f26-8890-d392a0dd06dc"
+        name="Enviar Fotos ao Cliente"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b1de2606-4a5c-40f0-a327-02af70e5e3aa"
+        name="Efetuar Pagamento"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5b769138-b973-488c-ae47-bfe31d99780c"
+        name="Efetuar Reclamação"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="566bd241-8317-417c-81fa-2ef871e44bc7"
+        name="Avaliar Prestador de Serviços"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="88a1a0e4-68de-425d-afa4-cc3bbe701458"
+        name="Avaliar Cliente"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="488fde5c-c7c7-4543-86a2-48c525c476fb"
+        name="Fazer Comentário de Prestador de Serviços"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f004b2cb-23c7-4791-acb3-d37ddbcec813"
+        name="Encerrar Conta"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d76360ef-f122-4b6f-b4a8-03d78d8b39e9"
+        name="Fazer Comentário de Cliente"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b2e7d2c5-16bc-4f79-82c2-539a1dc4c636"
+        name="Cadastrar Serviço"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b0efeb8f-a2df-44e7-8712-542873128bd5"
+        name="Alterar Cadastro"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="473f9287-a8c5-4657-bcca-43dec6c5af4d"
+        name="Visualizar Calendário"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7e1e20fe-8936-43b2-9fc2-398dd6d216fa"
+        name="Alterar Solicitação de Contrato"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="aea73221-9b20-435e-94a0-dbe37ae07497"
+        name="Efetuar Réplica de Reclamação"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a448dee6-46bf-446f-922e-a9b7d1b67791"
+        name="Cancelar Solicitação de Serviço"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="15abf555-0dc5-4a5f-8707-5f4fc1f7c44b"
+        name="Avaliar Réplica de Reclamação"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b1e9ffe9-6b5b-4513-87cc-23fc7f7526b9"
+        name="Visualizar Solicitações Anteriores do Cliente"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6420c6d4-eb73-46aa-83e2-e60484f2dd0a"
+        name="Visualizar Solicitações Anteriores do Prestador de Serviços"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d40f3ff9-cf7d-4ae7-b8e8-a724a8c584c8"
+        name="Finalizar Serviço"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e2d24d4d-834b-4737-91ac-e28773d6ec78"
+        name="Solicitar Finalização de Serviço"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="43b03d3b-0565-4a1a-b5d0-296ce61c97a9"
+        name="Avaliar Alterações de Solicitação de Serviço "
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9f031f94-01dc-4c5a-8f25-d5f5267f4db7"
+        name="Avaliar Alterações de Solicitação de Serviço Feitas pelo Cliente"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bb5cf611-04ff-4c32-b336-30c2a1f8f244"
+        name="Criar Publicação no Outdoor"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d7c98258-44e2-4a27-b75e-1aa2b6eff2f8"
+        name="Editar Publicação no Outdoor"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3ab6063e-9000-4e18-9698-4bee4b504939"
+        name="Apagar Publicação no Outdoor"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dfcaa225-eee1-4e03-bb0f-38c91ffee440"
+        name="Comentar em Publicação do Outdoor"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f9c1515d-4099-41a4-b319-52462bdd863e"
+        name="Apagar comentário de Publicação do Outdoor"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b213a6ae-7c06-4c2d-8129-d548a765b957"
+        name="Enviar Foto em Publicação de Outdoor"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7b3d0a59-ff33-4a94-918d-56f4d36ea399"
+        name="Compartilhar Postagem do Outdoor no Facebook e Google+"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

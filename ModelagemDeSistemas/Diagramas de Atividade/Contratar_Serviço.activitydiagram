@@ -18,12 +18,12 @@
             <elementDefinition Id="bd2c71b5-9253-4200-b041-48165b818b1a" />
             <flowNodeTargets>
               <controlFlow Id="b1460161-040a-46ff-a5ac-2108f0c89708" isLeaf="false">
-                <callBehaviorActionMoniker Id="0ff74651-424f-4072-8aba-7a1adc908ff3" LastKnownName="Listar Serviços" />
+                <callBehaviorActionMoniker Id="0ff74651-424f-4072-8aba-7a1adc908ff3" LastKnownName="Listar Prestadores Serviços" />
                 <elementDefinition Id="32614e56-80ff-4072-9025-c49edbe50506" />
               </controlFlow>
             </flowNodeTargets>
           </callBehaviorAction>
-          <opaqueAction Id="9e61b01d-f09b-44d4-aff9-85bb9e020f62" name="Visualizar Serviço" isLeaf="false">
+          <opaqueAction Id="9e61b01d-f09b-44d4-aff9-85bb9e020f62" name="Visualizar Prestador de Serviços" isLeaf="false">
             <elementDefinition Id="92a40b06-04db-405c-bfe4-17845f2d0c98" />
             <flowNodeTargets>
               <controlFlow Id="d003fb76-30cb-4744-a21f-b6932df2acea" isLeaf="false">
@@ -58,7 +58,7 @@
                 <elementDefinition Id="d25653ce-e94d-4a49-aff3-0e04c38afecf" />
               </controlFlow>
               <controlFlow Id="833fa6ab-f138-4585-92a6-8765bbe0770f" isLeaf="false">
-                <callBehaviorActionMoniker Id="8b5f1f0e-5b67-4b91-965a-b6c797242971" LastKnownName="Listar Contratos" />
+                <callBehaviorActionMoniker Id="8b5f1f0e-5b67-4b91-965a-b6c797242971" LastKnownName="Listar Solicitações de Serviço" />
                 <elementDefinition Id="365d8d1f-067e-4267-b12f-988a776134e0" />
               </controlFlow>
             </flowNodeTargets>
@@ -67,7 +67,7 @@
             <elementDefinition Id="32fb2e20-9041-435b-b9b6-9a545727dc1c" />
             <flowNodeTargets>
               <controlFlow Id="d221670d-6422-4777-b262-0f90f52da3ca" isLeaf="false">
-                <callBehaviorActionMoniker Id="d422ab1a-0831-4919-8f09-d86a7b18602e" LastKnownName="Aceitar Contrato" />
+                <callBehaviorActionMoniker Id="d422ab1a-0831-4919-8f09-d86a7b18602e" LastKnownName="Aceitar Solicitação de Serviço" />
                 <elementDefinition Id="b35a89ec-b515-4a2e-a454-0c31de010113" />
               </controlFlow>
             </flowNodeTargets>
@@ -75,13 +75,13 @@
           <joinNode Id="f1cd06ee-d771-49fb-8251-78c7a01a903c" name="Join1" isLeaf="false">
             <elementDefinition Id="1b608a01-78f9-45bf-a517-0e68281d6694" />
             <flowNodeTargets>
-              <controlFlow Id="325575a9-26d0-4df4-8bcf-1386315b7d8f" isLeaf="false">
-                <opaqueActionMoniker Id="292f2a0d-1140-4102-96b0-501b3b768e0f" LastKnownName="Visualizar Contrato" />
-                <elementDefinition Id="f3a41462-cf33-497a-9201-a5f4853354d8" />
+              <controlFlow Id="791b8e9d-d174-470d-960a-a6dd2b8fbc44" isLeaf="false">
+                <decisionNodeMoniker Id="0ade9ca0-48d1-45d8-972c-ccd4c40e0ec1" LastKnownName="Decision2" />
+                <elementDefinition Id="64e6d3d1-a924-4503-bb77-4d80f4005d8f" />
               </controlFlow>
             </flowNodeTargets>
           </joinNode>
-          <opaqueAction Id="292f2a0d-1140-4102-96b0-501b3b768e0f" name="Visualizar Contrato" isLeaf="false">
+          <opaqueAction Id="292f2a0d-1140-4102-96b0-501b3b768e0f" name="Visualizar Solicitações de Serviço" isLeaf="false">
             <elementDefinition Id="2756bb61-690a-4504-a012-e69eeb5f2aca" />
             <flowNodeTargets>
               <controlFlow Id="91dac85a-aac1-41f6-8743-ee219110f044" isLeaf="false">
@@ -90,11 +90,11 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <callBehaviorAction Id="0ff74651-424f-4072-8aba-7a1adc908ff3" name="Listar Serviços" isLeaf="false">
+          <callBehaviorAction Id="0ff74651-424f-4072-8aba-7a1adc908ff3" name="Listar Prestadores Serviços" isLeaf="false">
             <elementDefinition Id="ec0bb878-dfab-440b-bded-82ee6c2bb9da" />
             <flowNodeTargets>
               <controlFlow Id="edae5622-9eff-467b-bba3-3d82f7ab2b0a" isLeaf="false">
-                <opaqueActionMoniker Id="9e61b01d-f09b-44d4-aff9-85bb9e020f62" LastKnownName="Visualizar Serviço" />
+                <opaqueActionMoniker Id="9e61b01d-f09b-44d4-aff9-85bb9e020f62" LastKnownName="Visualizar Prestador de Serviços" />
                 <elementDefinition Id="7545e072-af39-43e3-9e1d-ca65ea525ee7" />
               </controlFlow>
             </flowNodeTargets>
@@ -103,12 +103,12 @@
             <elementDefinition Id="e491646f-7d79-4939-b87d-343cb66d11d6" />
             <flowNodeTargets>
               <controlFlow Id="fbc73138-6d89-47da-9167-6887e2e59cba" isLeaf="false">
-                <opaqueActionMoniker Id="9e61b01d-f09b-44d4-aff9-85bb9e020f62" LastKnownName="Visualizar Serviço" />
+                <opaqueActionMoniker Id="9e61b01d-f09b-44d4-aff9-85bb9e020f62" LastKnownName="Visualizar Prestador de Serviços" />
                 <elementDefinition Id="8a58f500-37a3-4530-946f-4a8182e51955" />
               </controlFlow>
             </flowNodeTargets>
           </callBehaviorAction>
-          <callBehaviorAction Id="d422ab1a-0831-4919-8f09-d86a7b18602e" name="Aceitar Contrato" isLeaf="false">
+          <callBehaviorAction Id="d422ab1a-0831-4919-8f09-d86a7b18602e" name="Aceitar Solicitação de Serviço" isLeaf="false">
             <elementDefinition Id="bcda37d3-36ea-4f79-8106-41ab646ea586" />
             <flowNodeTargets>
               <controlFlow Id="2a05162f-ef7c-4952-93d7-217413c6bed6" isLeaf="false">
@@ -117,7 +117,7 @@
               </controlFlow>
             </flowNodeTargets>
           </callBehaviorAction>
-          <callBehaviorAction Id="8b5f1f0e-5b67-4b91-965a-b6c797242971" name="Listar Contratos" isLeaf="false">
+          <callBehaviorAction Id="8b5f1f0e-5b67-4b91-965a-b6c797242971" name="Listar Solicitações de Serviço" isLeaf="false">
             <elementDefinition Id="2d0a4b99-e685-4758-8d2f-5bd566a717de" />
             <flowNodeTargets>
               <controlFlow Id="22b66acc-0843-4383-b605-2238b396fc71" isLeaf="false">
@@ -151,6 +151,28 @@
           <activityFinalNode Id="db7a8bae-1fbc-4b1c-91cd-7538e1d981fd" name="ActivityFinal1" isLeaf="false">
             <elementDefinition Id="a7fc4e6b-0dfb-454f-b0b8-98a3c94dd220" />
           </activityFinalNode>
+          <decisionNode Id="0ade9ca0-48d1-45d8-972c-ccd4c40e0ec1" name="Decision2" isLeaf="false">
+            <elementDefinition Id="cbaaab85-03af-4cc1-8f37-df5dd2469e72" />
+            <flowNodeTargets>
+              <controlFlow Id="47204068-cc12-4d96-95b3-3780f07e3499" guard="Else" isLeaf="false">
+                <opaqueActionMoniker Id="292f2a0d-1140-4102-96b0-501b3b768e0f" LastKnownName="Visualizar Solicitações de Serviço" />
+                <elementDefinition Id="fd109621-ed6e-4d4e-9beb-1425c047e806" />
+              </controlFlow>
+              <controlFlow Id="96fa84fa-3ba6-425b-bdb1-f613966f5bd1" guard="Solicitou Cancelamento" isLeaf="false">
+                <opaqueActionMoniker Id="fee70fc7-65ff-4609-b5c2-9192c0beb313" LastKnownName="Cancelar Solicitação de Serviço" />
+                <elementDefinition Id="9f0c4a9f-6501-48c6-adec-9a8d03a9a4db" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="fee70fc7-65ff-4609-b5c2-9192c0beb313" name="Cancelar Solicitação de Serviço" isLeaf="false">
+            <elementDefinition Id="6ba59bc6-7673-42f9-a382-6dc59eb6b19a" />
+            <flowNodeTargets>
+              <controlFlow Id="677f0015-d8d5-4f7a-95be-3b8d9883f3dd" isLeaf="false">
+                <activityFinalNodeMoniker Id="db7a8bae-1fbc-4b1c-91cd-7538e1d981fd" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="58d0a5be-8dcc-4ef5-b8c4-1a18e97197ee" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </activityRootModelHasActivity>

@@ -22,79 +22,95 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="Aceitar_Contrato.activitydiagram">
+    <Content Include="Diagrama de Casos de Uso\UCD.usecasediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Aceitar_Contrato.activitydiagram.layout">
+    <Content Include="Diagrama de Casos de Uso\UCD.usecasediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Aceitar_Contrato.activitydiagram</DependentUpon>
+      <DependentUpon>Diagrama de Casos de Uso\UCD.usecasediagram</DependentUpon>
     </Content>
-    <Content Include="Apagar_Serviço.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Apagar_Serviço.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Apagar_Serviço.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="Cadastrar_Serviço.activitydiagram">
+    <Content Include="Diagramas de Atividade\Aceitar_Contrato.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Cadastrar_Serviço.activitydiagram.layout">
+    <Content Include="Diagramas de Atividade\Aceitar_Contrato.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Cadastrar_Serviço.activitydiagram</DependentUpon>
+      <DependentUpon>Diagramas de Atividade\Aceitar_Contrato.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="Editar_Serviço.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Editar_Serviço.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Editar_Serviço.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="Efetuar_Pagamento.activitydiagram">
+    <Content Include="Diagramas de Atividade\Apagar_Serviço.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Efetuar_Pagamento.activitydiagram.layout">
+    <Content Include="Diagramas de Atividade\Apagar_Serviço.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Efetuar_Pagamento.activitydiagram</DependentUpon>
+      <DependentUpon>Diagramas de Atividade\Apagar_Serviço.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="Iniciar_Conversa.activitydiagram">
+    <Content Include="Diagramas de Atividade\Cadastrar_Serviço.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Iniciar_Conversa.activitydiagram.layout">
+    <Content Include="Diagramas de Atividade\Cadastrar_Serviço.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Iniciar_Conversa.activitydiagram</DependentUpon>
+      <DependentUpon>Diagramas de Atividade\Cadastrar_Serviço.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Diagramas de Atividade\Contratar_Serviço.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Diagramas de Atividade\Contratar_Serviço.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Diagramas de Atividade\Contratar_Serviço.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Diagramas de Atividade\DiagramaDeAutenticação.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Diagramas de Atividade\DiagramaDeAutenticação.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Diagramas de Atividade\DiagramaDeAutenticação.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Diagramas de Atividade\Editar_Serviço.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Diagramas de Atividade\Editar_Serviço.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Diagramas de Atividade\Editar_Serviço.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Diagramas de Atividade\Efetuar_Pagamento.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Diagramas de Atividade\Efetuar_Pagamento.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Diagramas de Atividade\Efetuar_Pagamento.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Diagramas de Atividade\Gerenciar_Outdoor.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Diagramas de Atividade\Gerenciar_Outdoor.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Diagramas de Atividade\Gerenciar_Outdoor.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Diagramas de Atividade\Iniciar_Conversa.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Diagramas de Atividade\Iniciar_Conversa.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Diagramas de Atividade\Iniciar_Conversa.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Diagramas de Atividade\Listar_Solicitações.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Diagramas de Atividade\Listar_Solicitações.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Diagramas de Atividade\Listar_Solicitações.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Diagramas de Atividade\Listar_Serviços.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Diagramas de Atividade\Listar_Serviços.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Diagramas de Atividade\Listar_Serviços.activitydiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
-    <Content Include="Contratar_Serviço.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Contratar_Serviço.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Contratar_Serviço.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="DiagramaDeAutenticação.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="DiagramaDeAutenticação.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>DiagramaDeAutenticação.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="Listar_Contratos.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Listar_Contratos.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Listar_Contratos.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="Listar_Serviços.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Listar_Serviços.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Listar_Serviços.activitydiagram</DependentUpon>
-    </Content>
     <Content Include="ModelDefinition\ModelagemDeSistemas.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Diagramas de Atividade" />
+    <Folder Include="Diagrama de Casos de Uso" />
   </ItemGroup>
 </Project>

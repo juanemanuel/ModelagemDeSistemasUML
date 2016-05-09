@@ -1,0 +1,811 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="a4a935d8-acda-485a-87a0-313f42c6a566" name="UCD" linkedPackageId="942fb2bd-35ff-4f30-8f74-403e10f1bf04" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="e41fbcfc-0716-4b14-ad4b-078d17ec363b">
+      <profileInstance Id="51bff33e-a866-486f-821a-d37fc1e8628a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="55197c99-e1cd-4c0a-bdce-e5c0f5e9f320">
+      <profileInstance Id="b9c60fe3-237e-4e2c-9130-0b213acbf2bb" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="078bc0ab-3c47-4dee-813f-b1623c827af6" name="Cliente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2a2436c2-e27a-4923-801d-f2f95bb29a79" />
+        <generalsInternal>
+          <generalization Id="a7bfb573-5e58-4a73-9256-568df252e4f6" isSubstitutable="false">
+            <actorMoniker Id="4894714c-f318-49db-9589-ba3471633413" LastKnownName="Usuário" />
+            <elementDefinition Id="3af6fece-ce6c-49c0-859c-40110d013f88" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="e620d6a8-cf92-41cb-9f02-d4a599bb2636" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Finalizar Serviço" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6eacf109-39a3-4821-8124-52db6b256475" LastKnownName="Finalizar Serviço" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f64b2014-50f9-48f3-9bd6-05bc28a3db35" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="944997f8-c293-46ad-97d1-3463d34cde8b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0c16abf3-ee07-4de1-8c1e-d618f10bf191" name="Finalizar Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4778d2d7-a29e-4bdb-b0d9-031615b947e1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9e38b910-8887-4c3b-9dce-4d6aca0569dd" />
+          </association>
+          <association Id="4ca30b0e-1b5f-4871-917b-a0d0b1785ff1" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Filtrar Prestadores de Serviço" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="93e1d501-2808-4909-a280-80384587c56a" LastKnownName="Filtrar Prestadores de Serviço" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3b2e9f30-1917-48d9-b7d3-d12cb2b2c8bd" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4e97bf98-aa77-4f79-951e-587e0f0a55b0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="71f19839-1b52-4495-9fe3-359b8672281c" name="Filtrar Prestadores de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4733ced3-b81a-4761-91c5-48f134c710d2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f8029cf5-5740-4b24-850f-321c775efdfc" />
+          </association>
+          <association Id="8b17bfad-975c-4071-ac80-c6db23463428" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Contratar Serviço" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0593f6e1-2528-4744-b22a-7c8895ec5fff" LastKnownName="Contratar Serviço" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd6bdf89-2585-4198-9d85-001b8ca1e192" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="70d5d2f8-491c-471c-91e7-004320f60a26" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d1f46e6-3044-44ea-8165-ab6081eae6a7" name="Contratar Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fe6db85c-7fde-4ab9-bf55-07cc074b729e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7a6b8053-5593-4e76-b14f-832193b3f487" />
+          </association>
+          <association Id="8bd8abe4-a18e-4f9c-bbfa-9778ef9aaacd" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Efetuar Reclamação" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8f6bfcfe-c453-41a7-b6e0-d15d93254040" LastKnownName="Efetuar Reclamação" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5e931b77-dbf0-4d7a-a820-fe9f43fef365" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="80360507-9f19-4222-add1-ea0c2e99fc83" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9a9b1b4a-8a82-440c-a4ab-a07d97c90d55" name="Efetuar Reclamação" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4ce8aec7-1692-4571-9655-3f62b156f58d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aef418a3-230a-493c-832e-7a9a31ce33da" />
+          </association>
+          <association Id="0cefcb6c-eadd-4c78-846a-5daee0654fb7" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Enviar Fotos ao Prestador de Serviços" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4bab3b54-259c-46a3-a6d5-c95e9e72f1b4" LastKnownName="Enviar Fotos ao Prestador de Serviços" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="59e418ad-3dfd-4d58-9db9-90dfc32281b3" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9aff7ef3-5666-4fe3-9d44-ced2e88fe431" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb6aefa0-de43-4703-80b7-5a35e88bd5eb" name="Enviar Fotos ao Prestador de Serviços" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="da0b5965-c9bd-4dcc-bc1a-ada0be7ca3ef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fec604b4-7657-4b5a-a6a9-b6015490573c" />
+          </association>
+          <association Id="c36af61e-87a0-4960-8ffa-e16f047efdd0" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Enviar Mensagem de Texto ao Prestador de Serviços" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="32b74e97-c62d-4d27-9510-14cdc59b22d9" LastKnownName="Enviar Mensagem de Texto ao Prestador de Serviços" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="48fcd091-f0eb-4523-9506-124b13b83c92" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d79d753e-7f22-4e38-a04c-a53565623e69" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ec54410-02d8-4802-87ea-d4669a178ad4" name="Enviar Mensagem de Texto ao Prestador de Serviços" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="57476d3a-59c5-4031-bd3d-0658d8e2ee24" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c9e8a516-5da3-4611-9064-38c5693e7726" />
+          </association>
+          <association Id="7cef2997-f946-47a4-b510-3d6ab0a22087" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Efetuar Pagamento" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="be1d0f81-5f45-4fc0-82f0-ec124f3a680f" LastKnownName="Efetuar Pagamento" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="242970f5-85b6-46ea-bf52-37cd27d3ebc1" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="611709bd-c6cd-4ec7-9b6e-5e51572c5c7a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f5d5f69-d4e6-40d9-b62b-29e356fd7150" name="Efetuar Pagamento" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="01dcdc47-6219-4542-b95a-1c107c80b663" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="83af614d-ee39-4490-b759-62e4fff5e273" />
+          </association>
+          <association Id="9df3b81e-379c-4f86-b45a-6eb8ade3c9fb" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Avaliar Prestador de Serviços" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c46823bb-70e7-4dcf-9adc-1f96e4a01464" LastKnownName="Avaliar Prestador de Serviços" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="248cb7c9-5f6c-467f-8c45-f58177acd925" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="76b092ee-c79f-4164-b266-f5a90bc6f601" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f21fb066-d5c5-4b41-a512-0d212624a410" name="Avaliar Prestador de Serviços" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3830ac89-e5ad-41ce-af73-2f5787e4d3d6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7cd5ef9d-d417-465b-9874-b875c217094b" />
+          </association>
+          <association Id="d0bc762e-156f-4143-9ba0-e0aaaf0e493e" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Alterar Solicitação de Contrato" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fc767917-3af8-4a84-a5a8-22323e5af041" LastKnownName="Alterar Solicitação de Contrato" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4e62cb72-45a9-410c-8f82-2190de9c6b0c" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f75f3510-e8a9-4484-aaae-4a86810a8e46" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="772be958-a61e-481c-bbd2-d06c86994441" name="Alterar Solicitação de Contrato" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1654cc25-7345-4d81-85f8-4eed44b78323" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8fa340c9-d73e-4649-9778-608756045852" />
+          </association>
+          <association Id="7ab225c4-4438-4db7-8eff-2af54ec8f59b" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Avaliar Réplica de Reclamação" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c786f334-1de3-4665-b396-3d0a4b851ade" LastKnownName="Avaliar Réplica de Reclamação" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bb129191-1e8a-45d1-b609-dab3b65e2b32" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cac23793-b085-4b7c-9c57-9a77b8b51161" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad268e8a-7e72-4e2f-aeb4-df09a684a7da" name="Avaliar Réplica de Reclamação" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6b285c29-d346-43da-bfca-1a45efda2f5c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="eb0b597d-452b-42ce-870d-3a75dfc8223d" />
+          </association>
+          <association Id="f53b7921-a22a-42f2-b276-b770398970f2" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Fazer Comentário de Prestador de Serviços" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="16af8cac-600f-4451-9c3c-38b072c84651" LastKnownName="Fazer Comentário de Prestador de Serviços" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ae3ed60d-6db9-4aac-a829-98b382564dee" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8c544202-61a5-4aad-b8a1-1e74b9264b5f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7e2a8fce-9c69-4b8c-8f25-2582e7c69126" name="Fazer Comentário de Prestador de Serviços" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="860dd5b7-08a0-411b-8938-66a87a2c7e34" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f8ccc220-dce7-4d32-9092-f2e231fb923b" />
+          </association>
+          <association Id="f469a57b-fb0b-4ec4-95c9-0205e117ba1c" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Visualizar Solicitações Anteriores do Prestador de Serviços" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6f35cc88-6a5a-4ecf-bc0f-58375f856e0a" LastKnownName="Visualizar Solicitações Anteriores do Prestador de Serviços" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f631a6a8-3ea3-4691-88f8-1a6f7462ced3" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="68856562-3551-4478-9fa4-485de9780872" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dd0fea1c-036e-45ba-9e34-8eafa2cc7978" name="Visualizar Solicitações Anteriores do Prestador de Serviços" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4a3ecaa1-2f1c-4cf6-8018-fe97118236ce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fd595df7-8670-441a-a5d6-9f504d1d7a92" />
+          </association>
+          <association Id="7147f01f-ade5-4bad-bc2a-e65d68f2e8d7" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Cancelar Solicitação de Serviço" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="80c8cdef-1a2c-4ff6-ad14-745261c9b2be" LastKnownName="Cancelar Solicitação de Serviço" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="940aab0f-c439-47d1-afce-8b3170dacef8" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="77632530-8bcb-4558-ac8c-844bf7953f58" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="932470ed-73ac-45c7-bf90-fb7f0ae4367a" name="Cancelar Solicitação de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="56a788b8-060a-4903-b39a-1ae08a365fb0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a45af3d6-b746-48c4-ba7f-c6bbf65cf488" />
+          </association>
+          <association Id="7b42b49e-20e3-46fe-83c3-d876ad8dd1ec" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="Avaliar Alterações de Solicitação de Serviço " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a01c3d84-bba4-4f85-8272-1915e78b3493" LastKnownName="Avaliar Alterações de Solicitação de Serviço " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ebd3c800-708f-4185-8907-7226e97057df" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5f0bd121-12a7-4254-9eed-3d834b667bfb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0cb370a0-7810-4c3e-ac64-6bdec8e4cf81" name="Avaliar Alterações de Solicitação de Serviço " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d2c3f963-2b67-4caa-a15b-576706534d34" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="53401c13-8b6f-4b98-a2e8-e8952bf95a24" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d0ee765a-6b17-4796-ba04-da69df20d920" name="Realizar Cadastro no Sistema" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d152448-c385-4c42-bd81-9f49fb34cd99" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a14f1d60-da49-4a55-88d0-2328334f7982" name="Autenticar-se no Sistema" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5d3d8b04-7a08-483c-a32b-a75e1423fbea" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="93e1d501-2808-4909-a280-80384587c56a" name="Filtrar Prestadores de Serviço" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0aaa6860-8e01-42a7-aee6-01a29699c4ab" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0593f6e1-2528-4744-b22a-7c8895ec5fff" name="Contratar Serviço" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="93e12fa4-7954-438e-98b6-2b5982b00b2c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="55ae2749-79a0-4779-84f2-aeabac40d96c" name="Prestador de Serviço" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9d82aa16-daf2-49db-a19f-29722f82698f" />
+        <generalsInternal>
+          <generalization Id="a1d49d07-3d3f-4d1d-ab57-274bfb737cb2" isSubstitutable="false">
+            <actorMoniker Id="4894714c-f318-49db-9589-ba3471633413" LastKnownName="Usuário" />
+            <elementDefinition Id="5bace629-ed70-4148-8109-0af70eb98f93" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="0baf773c-d442-40d7-9a17-4b0db60f676b" isDerived="false" sourceEndRoleName="Prestador de Serviço" targetEndRoleName="Enviar Mensagens de Texto ao Cliente" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="70193c92-00c4-43ca-b86d-f0de8524425a" LastKnownName="Enviar Mensagens de Texto ao Cliente" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2de40abd-b2be-4bb6-99b2-f051445e3265" name="Prestador de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f5fadfe4-b874-400e-ac3c-980dd9ca1b96" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b240167f-d0c8-4832-8624-799b02a77804" name="Enviar Mensagens de Texto ao Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="61dd0282-e84d-4fb1-b3d5-38c52cef1b54" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="79d9dbf1-ed54-4c7a-a639-5d5865b6a3c7" />
+          </association>
+          <association Id="a1a2c917-72ca-4323-ba0b-8d8569029350" isDerived="false" sourceEndRoleName="Prestador de Serviço" targetEndRoleName="Visualizar Solicitação de Serviço" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="14639d77-766f-426b-8529-957ccb6a5c22" LastKnownName="Visualizar Solicitação de Serviço" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bbe75982-b7d7-486a-b2f5-9609cf94d35d" name="Prestador de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="58bb8ad2-fcb0-4f2c-9532-78b2807d656b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="996a4e51-16a2-42ea-a9ee-3238447925b6" name="Visualizar Solicitação de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7818e370-f151-482b-8b25-deb6b7c87f39" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fd5e2a7d-3ac6-4ff3-8d3b-0d710830f94d" />
+          </association>
+          <association Id="e1686e90-b02c-47d8-aa5c-8e5a975f696a" isDerived="false" sourceEndRoleName="Prestador de Serviço" targetEndRoleName="Enviar Fotos ao Cliente" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="363b84bf-d6f2-47d7-a4b9-4a0189553348" LastKnownName="Enviar Fotos ao Cliente" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1da36fb7-17e5-4020-bc7b-dd854ca42a68" name="Prestador de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6c2291c4-6175-4670-a75d-c15c0c032f96" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d4a37602-8d62-4b18-a6e1-485edcb79056" name="Enviar Fotos ao Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a3347ada-ef5f-4fcd-89be-d0f3c95d6dd1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cd63b8df-2513-462d-8d0c-38fbd971a743" />
+          </association>
+          <association Id="ffc03651-0eb9-4fe8-b0c0-36a703ded041" isDerived="false" sourceEndRoleName="Prestador de Serviço" targetEndRoleName="Visualizar Solicitações Anteriores do Cliente" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="58051503-6ac6-4b7e-8a81-35f654f80515" LastKnownName="Visualizar Solicitações Anteriores do Cliente" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad493060-4499-4bd3-bcec-32bb41208914" name="Prestador de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4d6b123c-8e85-4a8e-be9b-8b214ed6fb26" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a0dc73db-8c3c-455b-8ab0-b65b9dd65b5f" name="Visualizar Solicitações Anteriores do Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="43a16553-2961-4af3-8827-ef92eac8ce5c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b19b0d4c-5f55-457a-b291-2b4939657e05" />
+          </association>
+          <association Id="5946b083-8b90-484b-881a-8715894fadc7" isDerived="false" sourceEndRoleName="Prestador de Serviço" targetEndRoleName="Avaliar Alterações de Solicitação de Serviço Feitas pelo Cliente" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1c06b475-8c1b-40ff-8a23-b0a33136daa3" LastKnownName="Avaliar Alterações de Solicitação de Serviço Feitas pelo Cliente" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6cb80ab4-36d4-45f2-b457-44aad6334ab1" name="Prestador de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0a3a5ed6-8784-4437-9b33-41473e924485" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b0ad3b67-fee7-4436-b467-e132b213e814" name="Avaliar Alterações de Solicitação de Serviço Feitas pelo Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b65e3259-4582-40da-8485-61f7498817f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c1371c1f-8605-4895-971a-2428eefa2dda" />
+          </association>
+          <association Id="06c0f472-337b-4800-a9d5-d84ddf88f677" isDerived="false" sourceEndRoleName="Prestador de Serviço" targetEndRoleName="Efetuar Réplica de Reclamação" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ce39d8d4-d137-4f89-ab9c-41892ca6e4a4" LastKnownName="Efetuar Réplica de Reclamação" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="03fbbafa-b65a-4b30-abcc-855714f42994" name="Prestador de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8492eecc-1af8-41eb-a2e2-1b8b9cd35e74" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3e3e4c87-1a40-4830-bcf2-a0decacd977c" name="Efetuar Réplica de Reclamação" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="670c506f-ece7-4fe6-9e6c-738a58b21f6d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f21d18ff-1f48-4789-a3dc-caeefd1db774" />
+          </association>
+          <association Id="035abca4-fc4c-436f-902a-f3a34ca58936" isDerived="false" sourceEndRoleName="Prestador de Serviço" targetEndRoleName="Fazer Comentário de Cliente" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f0636338-52e3-4897-b62a-6e74f30551f4" LastKnownName="Fazer Comentário de Cliente" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5aa0794e-9dc4-40f9-a2c2-6aa172807ce9" name="Prestador de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8128bc2e-23f5-45da-ad42-c873649383a9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1218ac89-02c0-466e-8616-673c2511274c" name="Fazer Comentário de Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="279cf4ca-f8bb-44ba-be49-ed4baec5c6be" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="567ad04d-e058-4663-ba10-04fd7b808542" />
+          </association>
+          <association Id="11d4625d-c3f4-47fc-b389-78577e0a0fc5" isDerived="false" sourceEndRoleName="Prestador de Serviço" targetEndRoleName="Avaliar Cliente" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fbd8edf5-aaf2-4432-b537-a18c33232e74" LastKnownName="Avaliar Cliente" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2b31ded5-55de-4035-a490-b411c1b121dd" name="Prestador de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b864029a-66a5-41cb-a44b-c82fe9a99960" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9fde99af-e351-4e9b-bb01-8bc906397c26" name="Avaliar Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7b48b5a5-9ae5-4972-968c-33e527c6be35" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1bc83d25-3370-4981-a5cd-b90d6eace259" />
+          </association>
+          <association Id="ef1f3fe6-0bbb-41d5-9e1e-5d385c5a9fb9" isDerived="false" sourceEndRoleName="Prestador de Serviço" targetEndRoleName="Cadastrar Serviço" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="df3f39a1-281a-472f-9277-88f0d9da6515" LastKnownName="Cadastrar Serviço" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4612a000-589f-4659-8f98-f484798f9953" name="Prestador de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="67dba650-006c-4dc8-b566-19d324cb6d9c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e37fb1e9-a86e-454c-9a1c-32cb0bd712e9" name="Cadastrar Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ad85ae8-aa15-4de0-b82c-350f8412044d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fb6bb5a6-0744-414c-b862-1def334d5348" />
+          </association>
+          <association Id="1a4ebbc2-7318-4d8f-864e-7539e8c0c682" isDerived="false" sourceEndRoleName="Prestador de Serviço" targetEndRoleName="Solicitar Finalização de Serviço" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="02439ece-58d0-4042-a263-8635f99a8ff0" LastKnownName="Solicitar Finalização de Serviço" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d3c0b17b-3d59-4f44-bfe9-341fccf127cc" name="Prestador de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="102ad6f0-15c4-4840-b61f-b8a5ee051c2e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3be3ebdc-82e8-4bd5-8282-966e266507a6" name="Solicitar Finalização de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b653b04d-ea36-4229-a28d-0f74ae87ffc7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f4e511f4-542f-49d2-b29b-7d38985e58a2" />
+          </association>
+          <association Id="c7c6902f-c5a9-4b59-8dbc-e157bb25cf41" isDerived="false" sourceEndRoleName="Prestador de Serviço" targetEndRoleName="Apagar Publicação no Outdoor" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b2d3781e-8390-4d31-8edd-fb6b0a8df57d" LastKnownName="Apagar Publicação no Outdoor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2828c431-cb7f-4b00-9309-ca6e35174f54" name="Prestador de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4c8600f0-baeb-421c-b959-35c1efa5314b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eed08eda-9d33-4707-a9eb-43f3eda527b6" name="Apagar Publicação no Outdoor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1ca09c46-38e9-4c19-97bc-7200ea0c7ec4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cd7414b3-02c0-4b6d-807e-38d467d82f86" />
+          </association>
+          <association Id="90f8ffe5-6fe7-4641-b4f0-1f5182d791a7" isDerived="false" sourceEndRoleName="Prestador de Serviço" targetEndRoleName="Criar Publicação no Outdoor" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b30bdf4d-f066-4d69-9c3c-8b280c9e2618" LastKnownName="Criar Publicação no Outdoor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="96c788e7-e9de-4f70-8762-92c6969def82" name="Prestador de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="79d360b7-c548-4508-8740-c8aca54f055d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4935f927-0639-496a-a010-89183ed94c7a" name="Criar Publicação no Outdoor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="53506773-9f2a-491e-ba69-62792ce3b773" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f66f96a7-012a-4b17-a79b-5773384afbfa" />
+          </association>
+          <association Id="1aee20cb-dc9f-44d9-9b6f-7661094751e1" isDerived="false" sourceEndRoleName="Prestador de Serviço" targetEndRoleName="Editar Publicação no Outdoor" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2a82fb2c-7c05-4ebf-9897-8f58e32d3e4e" LastKnownName="Editar Publicação no Outdoor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="97618f4d-b9c1-47e2-bb33-1e490f854fd3" name="Prestador de Serviço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c6af5fbc-8e8d-47ec-b807-67420a2dd278" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6a377a60-c0cf-4341-8995-12e7672a8c39" name="Editar Publicação no Outdoor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cccb6ab2-93a7-4131-bb45-75785240ce04" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="85f0555d-6c8e-4671-ae86-84a8c213a45c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4894714c-f318-49db-9589-ba3471633413" name="Usuário" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aa03c6d9-1940-43b6-b9a3-07a644d067e3" />
+        <targetEnds>
+          <association Id="3cba117e-5836-4846-b3f3-49d96a188a66" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Realizar Cadastro no Sistema" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d0ee765a-6b17-4796-ba04-da69df20d920" LastKnownName="Realizar Cadastro no Sistema" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d344e0d-76f2-4b65-bf5f-d6d413485b4b" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="18d71566-5498-4998-a1d1-6464be75f411" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="303e7316-2de1-4069-ab6d-3e29fab608cd" name="Realizar Cadastro no Sistema" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b46f2d61-3f34-4502-b180-f17c359892ef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8c152d16-322f-4b50-93bd-0078fab9b795" />
+          </association>
+          <association Id="889bc615-cac4-43f2-896b-1ee9be5f0be2" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Realizar Cadastro no Sistema" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d0ee765a-6b17-4796-ba04-da69df20d920" LastKnownName="Realizar Cadastro no Sistema" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d83039bc-2425-4ea6-9a97-8ee9f286d796" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c51e7f3b-077a-4b5d-aa9f-aa42d014f535" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="15b44acc-649b-4cc1-9f14-750daac3e322" name="Realizar Cadastro no Sistema" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e2b7c4cb-39ce-48a6-83a2-3c7b1a783edf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="25edddd3-e12a-46a3-acd9-bcaa67257750" />
+          </association>
+          <association Id="820a116f-30fc-4b36-ada1-f1c069f4ee32" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Encerrar Conta" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="418676d8-df22-4d1b-bedb-50349a25ac34" LastKnownName="Encerrar Conta" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1ae1e52b-5e5a-48fb-a735-c1bd5a8d57f2" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b2d93e43-1b26-4f30-acb0-98a6306ca595" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="12c890eb-a068-4e3f-8bb0-433d5520a664" name="Encerrar Conta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0f61fa17-e1aa-43fa-8ba0-90c0b1a0c547" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5ac10d98-5ef4-42d6-bfa6-a1dfdfd15d9d" />
+          </association>
+          <association Id="c14f6eb0-148c-433b-b707-6ae346307c2c" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Visualizar Calendário" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="29d90ddc-3183-4ad7-84c6-3f32d0d42e90" LastKnownName="Visualizar Calendário" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="619fadd0-38c9-4ab1-b9f2-d8965b49e856" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f09c4bc8-08b6-4bf8-bd2c-a24e5c45b2b6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9802afe3-fb4b-4e6e-86c8-57cb74849534" name="Visualizar Calendário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2f404da1-035d-4141-b395-90e328152192" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="515474a9-3d67-48fb-870a-d0d9ecae1388" />
+          </association>
+          <association Id="4424a84e-1d5e-4745-935f-cc630bdd51d9" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Autenticar-se no Sistema" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a14f1d60-da49-4a55-88d0-2328334f7982" LastKnownName="Autenticar-se no Sistema" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e9b7d7bf-90d7-43d5-b849-f152d0f330b9" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="56da1dbc-ec70-48df-9592-737994de3af3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9eaf9a16-97fd-4e23-a99e-48aeb739dca4" name="Autenticar-se no Sistema" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bcb2dba1-575c-4f39-ae02-39a6d1c1192c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2314a24d-e4d5-4216-b8f9-27bac4ddedfd" />
+          </association>
+          <association Id="a2340060-0c79-4abe-86d1-a741706ca5fc" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Apagar comentário de Publicação do Outdoor" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="78267fb8-f492-4e99-84a1-2df79a584485" LastKnownName="Apagar comentário de Publicação do Outdoor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d921c743-e60a-4240-aee2-afb514624311" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="32cc454c-7c99-4ab3-aea5-c93318d2799b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6493978-ab96-4f06-bf6b-5ecc2e1385f7" name="Apagar comentário de Publicação do Outdoor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="152a1358-275b-4aa0-acf0-4c898e26560f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e532bac0-a442-4648-b557-74bf4882bdc4" />
+          </association>
+          <association Id="7544c6af-65af-4f60-8c74-2ea5bee21427" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Comentar em Publicação do Outdoor" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="268a98ff-84e1-4669-acbc-8c987ff34e4e" LastKnownName="Comentar em Publicação do Outdoor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c051506a-999c-443e-9ebe-988c553052bb" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e59f0f3c-a458-4b6f-bb59-553b89547d84" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5408f3e2-e118-4b7e-855c-a1381d43eb83" name="Comentar em Publicação do Outdoor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8ac6646c-7416-4fa2-b567-b930e5be26fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="414d9d42-e000-462b-84cd-0c24662cd567" />
+          </association>
+          <association Id="0739529a-f4a4-4c82-9bdb-db3dca10cc8a" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Enviar Foto em Publicação de Outdoor" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7fde8c12-8294-41d5-82bf-775aa005ab28" LastKnownName="Enviar Foto em Publicação de Outdoor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="46893828-41b8-4298-8c99-a3b77f22315e" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1ca3992e-25e1-4d42-93ea-1b381d13d1fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4bf060b4-86fb-48d5-9db5-525165541653" name="Enviar Foto em Publicação de Outdoor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ef9523ab-5586-4d5e-ad12-5b24d245dd8d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="24994856-5de8-434f-adc3-76cc1b373490" />
+          </association>
+          <association Id="8e7c9cd0-8b82-47ef-b01c-dff0e4fa8c1e" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Compartilhar Postagem do Outdoor no Facebook e Google+" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6e2fcfdc-508e-45b3-9f80-90d116709334" LastKnownName="Compartilhar Postagem do Outdoor no Facebook e Google+" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8d5d1ef7-ff04-4a85-95fd-3deb4838f719" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="18ec0c77-b99d-4d6f-8bd5-b64190c857b6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d2146389-f36a-498e-ae06-3d7e80d15311" name="Compartilhar Postagem do Outdoor no Facebook e Google+" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a6a12798-412c-4255-a486-280f14bf98b4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d1e9401d-2723-43ee-a720-f61075cf405f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="32b74e97-c62d-4d27-9510-14cdc59b22d9" name="Enviar Mensagem de Texto ao Prestador de Serviços" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4c34ef55-ee50-40e7-9442-1562920e8c50" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4bab3b54-259c-46a3-a6d5-c95e9e72f1b4" name="Enviar Fotos ao Prestador de Serviços" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6ce5875f-5a87-4670-a584-30e6a6edc8a0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="14639d77-766f-426b-8529-957ccb6a5c22" name="Visualizar Solicitação de Serviço" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3ac9270b-ef29-4b50-9177-ac216f2a289f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="70193c92-00c4-43ca-b86d-f0de8524425a" name="Enviar Mensagens de Texto ao Cliente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1e099141-e71f-41cd-9000-91190f639382" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="363b84bf-d6f2-47d7-a4b9-4a0189553348" name="Enviar Fotos ao Cliente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ba038c27-0311-4f26-8890-d392a0dd06dc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="be1d0f81-5f45-4fc0-82f0-ec124f3a680f" name="Efetuar Pagamento" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b1de2606-4a5c-40f0-a327-02af70e5e3aa" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8f6bfcfe-c453-41a7-b6e0-d15d93254040" name="Efetuar Reclamação" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5b769138-b973-488c-ae47-bfe31d99780c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c46823bb-70e7-4dcf-9adc-1f96e4a01464" name="Avaliar Prestador de Serviços" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="566bd241-8317-417c-81fa-2ef871e44bc7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fbd8edf5-aaf2-4432-b537-a18c33232e74" name="Avaliar Cliente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="88a1a0e4-68de-425d-afa4-cc3bbe701458" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="16af8cac-600f-4451-9c3c-38b072c84651" name="Fazer Comentário de Prestador de Serviços" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="488fde5c-c7c7-4543-86a2-48c525c476fb" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="418676d8-df22-4d1b-bedb-50349a25ac34" name="Encerrar Conta" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f004b2cb-23c7-4791-acb3-d37ddbcec813" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f0636338-52e3-4897-b62a-6e74f30551f4" name="Fazer Comentário de Cliente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d76360ef-f122-4b6f-b4a8-03d78d8b39e9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="df3f39a1-281a-472f-9277-88f0d9da6515" name="Cadastrar Serviço" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b2e7d2c5-16bc-4f79-82c2-539a1dc4c636" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4e5cdf02-b21d-426a-91b7-6c03cad393f9" name="Alterar Cadastro" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b0efeb8f-a2df-44e7-8712-542873128bd5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="29d90ddc-3183-4ad7-84c6-3f32d0d42e90" name="Visualizar Calendário" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="473f9287-a8c5-4657-bcca-43dec6c5af4d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fc767917-3af8-4a84-a5a8-22323e5af041" name="Alterar Solicitação de Contrato" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e1e20fe-8936-43b2-9fc2-398dd6d216fa" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ce39d8d4-d137-4f89-ab9c-41892ca6e4a4" name="Efetuar Réplica de Reclamação" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aea73221-9b20-435e-94a0-dbe37ae07497" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="80c8cdef-1a2c-4ff6-ad14-745261c9b2be" name="Cancelar Solicitação de Serviço" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a448dee6-46bf-446f-922e-a9b7d1b67791" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c786f334-1de3-4665-b396-3d0a4b851ade" name="Avaliar Réplica de Reclamação" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="15abf555-0dc5-4a5f-8707-5f4fc1f7c44b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="58051503-6ac6-4b7e-8a81-35f654f80515" name="Visualizar Solicitações Anteriores do Cliente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b1e9ffe9-6b5b-4513-87cc-23fc7f7526b9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6f35cc88-6a5a-4ecf-bc0f-58375f856e0a" name="Visualizar Solicitações Anteriores do Prestador de Serviços" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6420c6d4-eb73-46aa-83e2-e60484f2dd0a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6eacf109-39a3-4821-8124-52db6b256475" name="Finalizar Serviço" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d40f3ff9-cf7d-4ae7-b8e8-a724a8c584c8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="02439ece-58d0-4042-a263-8635f99a8ff0" name="Solicitar Finalização de Serviço" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e2d24d4d-834b-4737-91ac-e28773d6ec78" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a01c3d84-bba4-4f85-8272-1915e78b3493" name="Avaliar Alterações de Solicitação de Serviço " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="43b03d3b-0565-4a1a-b5d0-296ce61c97a9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1c06b475-8c1b-40ff-8a23-b0a33136daa3" name="Avaliar Alterações de Solicitação de Serviço Feitas pelo Cliente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f031f94-01dc-4c5a-8f25-d5f5267f4db7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b30bdf4d-f066-4d69-9c3c-8b280c9e2618" name="Criar Publicação no Outdoor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb5cf611-04ff-4c32-b336-30c2a1f8f244" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2a82fb2c-7c05-4ebf-9897-8f58e32d3e4e" name="Editar Publicação no Outdoor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d7c98258-44e2-4a27-b75e-1aa2b6eff2f8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b2d3781e-8390-4d31-8edd-fb6b0a8df57d" name="Apagar Publicação no Outdoor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3ab6063e-9000-4e18-9698-4bee4b504939" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="268a98ff-84e1-4669-acbc-8c987ff34e4e" name="Comentar em Publicação do Outdoor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dfcaa225-eee1-4e03-bb0f-38c91ffee440" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="78267fb8-f492-4e99-84a1-2df79a584485" name="Apagar comentário de Publicação do Outdoor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f9c1515d-4099-41a4-b319-52462bdd863e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7fde8c12-8294-41d5-82bf-775aa005ab28" name="Enviar Foto em Publicação de Outdoor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b213a6ae-7c06-4c2d-8129-d548a765b957" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6e2fcfdc-508e-45b3-9f80-90d116709334" name="Compartilhar Postagem do Outdoor no Facebook e Google+" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7b3d0a59-ff33-4a94-918d-56f4d36ea399" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="942fb2bd-35ff-4f30-8f74-403e10f1bf04" name="ModelagemDeSistemas">
+    <elementDefinition Id="a643e59f-cc81-4c6c-a880-f7dd110204db" />
+  </package>
+</useCaseModelRoot>

@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="6e0ac8a5-f246-4ef7-b4f9-ab5e744cf717" name="Aceitar_Contrato" linkedPackageId="fc2c5dae-7576-49e4-881a-1cae859db7b2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="2f4256e3-cfc1-4b9a-93d8-c1d3d77da0a1">
-      <profileInstance Id="fed23d4c-7e6f-4646-a4c2-32ba12eabdb9" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="4b47e06d-65d0-4935-825d-5ffa4a35cd97">
-      <profileInstance Id="8008d5e4-22a9-45e1-845a-3378f4bcaf38" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="13b80de1-0025-4826-b8eb-b420d6f3d07d" name="Aceitar_Contrato" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -23,12 +9,12 @@
             <elementDefinition Id="5c77a63f-4c01-46d2-9e50-4c578a56add8" />
             <flowNodeTargets>
               <controlFlow Id="6299653e-83ca-442c-bbe7-a77d086ddd83" isLeaf="false">
-                <opaqueActionMoniker Id="58074a43-ee38-4dbb-85a7-0d1d81bf0100" LastKnownName="Visualizar Serviço" />
+                <opaqueActionMoniker Id="58074a43-ee38-4dbb-85a7-0d1d81bf0100" LastKnownName="Visualizar Solicitação de Serviço" />
                 <elementDefinition Id="89272073-00a5-4978-ae69-70edbad9b2bb" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
-          <opaqueAction Id="58074a43-ee38-4dbb-85a7-0d1d81bf0100" name="Visualizar Serviço" isLeaf="false">
+          <opaqueAction Id="58074a43-ee38-4dbb-85a7-0d1d81bf0100" name="Visualizar Solicitação de Serviço" isLeaf="false">
             <elementDefinition Id="1cdb64cb-5306-4024-96c9-80febd37d55d" />
             <flowNodeTargets>
               <controlFlow Id="2e46498c-c088-41d4-a409-c7efbc03bbb0" isLeaf="false">
@@ -40,17 +26,21 @@
           <decisionNode Id="c13030be-58bc-4024-b13a-fb86a0565ac3" name="Decision1" isLeaf="false">
             <elementDefinition Id="ffb12360-84fb-44b6-9774-1f6ee1e8438c" />
             <flowNodeTargets>
-              <controlFlow Id="de5f3f40-9e34-4f7f-b38a-911244cc1033" guard="Contrato Aceito" isLeaf="false">
-                <opaqueActionMoniker Id="7a22dca2-4bec-41b4-88f2-2f49b361691c" LastKnownName="Aceitar Contrato" />
+              <controlFlow Id="de5f3f40-9e34-4f7f-b38a-911244cc1033" guard="Solicitação de Serviço Aceita" isLeaf="false">
+                <opaqueActionMoniker Id="7a22dca2-4bec-41b4-88f2-2f49b361691c" LastKnownName="Aceitar Solicitação de Serviço" />
                 <elementDefinition Id="e9198b84-89af-4853-8026-38b4914aed7d" />
               </controlFlow>
-              <controlFlow Id="1f524481-d411-4ac5-8ab1-c78dbad9bbca" guard="Else" isLeaf="false">
-                <opaqueActionMoniker Id="d8b7619f-9aa2-43f2-a8f2-17fb852fd14a" LastKnownName="Recusar Contrato" />
+              <controlFlow Id="1f524481-d411-4ac5-8ab1-c78dbad9bbca" guard="Solicitação de Serviço Recusada" isLeaf="false">
+                <opaqueActionMoniker Id="d8b7619f-9aa2-43f2-a8f2-17fb852fd14a" LastKnownName="Recusar Solicitação de Serviço" />
                 <elementDefinition Id="e284f3e3-0766-406c-9813-c1bb7b5f8a49" />
+              </controlFlow>
+              <controlFlow Id="44d8b7b2-e82c-4a6f-96d9-395d01d0300d" guard="Necessita Alteração de Dados" isLeaf="false">
+                <opaqueActionMoniker Id="e87b51fc-35ce-497d-9567-a6f427317d2d" LastKnownName="Alterar Solicitação de Serviço" />
+                <elementDefinition Id="b28df582-15cf-4c96-9e5b-5151f050e3a0" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
-          <opaqueAction Id="7a22dca2-4bec-41b4-88f2-2f49b361691c" name="Aceitar Contrato" isLeaf="false">
+          <opaqueAction Id="7a22dca2-4bec-41b4-88f2-2f49b361691c" name="Aceitar Solicitação de Serviço" isLeaf="false">
             <elementDefinition Id="7422d6a1-4ffd-4127-8be3-96fa662ce35d" />
             <flowNodeTargets>
               <controlFlow Id="eb89e770-5850-4026-bf5f-2c0fb4073a19" isLeaf="false">
@@ -59,7 +49,7 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="d8b7619f-9aa2-43f2-a8f2-17fb852fd14a" name="Recusar Contrato" isLeaf="false">
+          <opaqueAction Id="d8b7619f-9aa2-43f2-a8f2-17fb852fd14a" name="Recusar Solicitação de Serviço" isLeaf="false">
             <elementDefinition Id="143c5b3b-6c11-4ab4-861b-ad2320a5ddab" />
             <flowNodeTargets>
               <controlFlow Id="070cdc5a-cb0f-48f4-bc82-a5c00e1eee3c" isLeaf="false">
@@ -72,21 +62,21 @@
             <elementDefinition Id="55eda769-0ed0-4f96-8cda-76a70b822dcf" />
             <flowNodeTargets>
               <controlFlow Id="a1ab5b0e-3dd6-4720-8f82-106b703739f6" isLeaf="false">
-                <sendSignalActionMoniker Id="8ce148c6-58db-4af7-8d6e-23bdaabae88b" LastKnownName="Enviar Notificação de Estado de Contrato" />
+                <sendSignalActionMoniker Id="8ce148c6-58db-4af7-8d6e-23bdaabae88b" LastKnownName="Enviar Notificação de Estado de Solicitação de Serviço" />
                 <elementDefinition Id="322ff48f-d6e3-4326-a9bd-60ad38a624fd" />
               </controlFlow>
             </flowNodeTargets>
           </mergeNode>
-          <sendSignalAction Id="8ce148c6-58db-4af7-8d6e-23bdaabae88b" name="Enviar Notificação de Estado de Contrato" isLeaf="false">
+          <sendSignalAction Id="8ce148c6-58db-4af7-8d6e-23bdaabae88b" name="Enviar Notificação de Estado de Solicitação de Serviço" isLeaf="false">
             <elementDefinition Id="334c4354-39c9-4a28-aced-239f5ebd18dc" />
             <flowNodeTargets>
               <controlFlow Id="acff4405-83a3-4a14-8ae2-f13b1543c4e8" isLeaf="false">
-                <acceptEventActionMoniker Id="5e1d9d44-c0e4-45af-a731-ece9d4b0b751" LastKnownName="Mudar Estado do Contrato" />
+                <acceptEventActionMoniker Id="5e1d9d44-c0e4-45af-a731-ece9d4b0b751" LastKnownName="Mudar Estado da Solicitação de Serviço" />
                 <elementDefinition Id="bffe233b-c075-42ae-a014-469642a610ed" />
               </controlFlow>
             </flowNodeTargets>
           </sendSignalAction>
-          <acceptEventAction Id="5e1d9d44-c0e4-45af-a731-ece9d4b0b751" name="Mudar Estado do Contrato" isLeaf="false" isUnmarshall="false">
+          <acceptEventAction Id="5e1d9d44-c0e4-45af-a731-ece9d4b0b751" name="Mudar Estado da Solicitação de Serviço" isLeaf="false" isUnmarshall="false">
             <elementDefinition Id="57955f82-907f-4c45-ac80-185c19442290" />
             <flowNodeTargets>
               <controlFlow Id="9fb4d258-4544-43cb-a5df-027a24018e85" isLeaf="false">
@@ -98,11 +88,34 @@
           <activityFinalNode Id="55f6c9ab-ae5b-4050-b761-f07d73c76ed6" name="ActivityFinal1" isLeaf="false">
             <elementDefinition Id="0a4c3321-d359-46b3-9f94-80b6c89c8e74" />
           </activityFinalNode>
+          <opaqueAction Id="e87b51fc-35ce-497d-9567-a6f427317d2d" name="Alterar Solicitação de Serviço" isLeaf="false">
+            <elementDefinition Id="f842293c-fa17-43c6-b028-b2ae336d70a4" />
+            <flowNodeTargets>
+              <controlFlow Id="2dbc791a-f860-4f55-999a-2c43040ba52b" isLeaf="false">
+                <mergeNodeMoniker Id="aee2293c-59c5-4489-bbab-3fd4c03a5d30" LastKnownName="Merge1" />
+                <elementDefinition Id="508d6553-d59d-4c69-9916-438a7a297d8c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
   </packagedElements>
   <package Id="fc2c5dae-7576-49e4-881a-1cae859db7b2" name="ModelagemDeSistemas">
     <elementDefinition Id="a643e59f-cc81-4c6c-a880-f7dd110204db" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2f4256e3-cfc1-4b9a-93d8-c1d3d77da0a1">
+        <profileInstance Id="fed23d4c-7e6f-4646-a4c2-32ba12eabdb9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4b47e06d-65d0-4935-825d-5ffa4a35cd97">
+        <profileInstance Id="8008d5e4-22a9-45e1-845a-3378f4bcaf38" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7d34b8e9-5eb6-4ff8-be9a-fcc471371c66" name="Gerenciar_Outdoor" linkedPackageId="7685a47d-fade-4fbf-ac43-da0838e76de9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="9605a085-9b2a-4b82-9570-99bbf9212c07">
+      <profileInstance Id="d0bf2c88-0c27-4a78-b8be-73ad33df9e35" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="75991e84-92fe-4b1a-8cc6-967e1a03f55e">
+      <profileInstance Id="01165da3-22cf-498d-9bf1-030b81c4c8a6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="b8891850-a8e5-43bb-9256-0e42d6b6dbef" name="Gerenciar_Outdoor" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="8aad3ca4-3b21-47d3-9cf8-13221b52cd1e" />
+        <nodes>
+          <initialNode Id="7b1bf76e-bda6-4d76-bb8c-c86736d6fbb2" name="Initial1" isLeaf="false">
+            <elementDefinition Id="6cf8395e-4055-497f-8d06-3577a9c2a5b1" />
+            <flowNodeTargets>
+              <controlFlow Id="73b0f093-3a8c-47a3-ba50-2a4d90e625c9" isLeaf="false">
+                <opaqueActionMoniker Id="1d5aeb68-28f9-4819-8f72-a9e28dcf6762" LastKnownName="Criar Publicação" />
+                <elementDefinition Id="2da923f6-2e11-4fc3-87ae-97218cfc7d67" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="1d5aeb68-28f9-4819-8f72-a9e28dcf6762" name="Criar Publicação" isLeaf="false">
+            <elementDefinition Id="1a3b35e6-3e22-46eb-9ee7-b101108e9875" />
+            <flowNodeTargets>
+              <controlFlow Id="dc612de1-666b-4806-a67e-e533a618066b" isLeaf="false">
+                <decisionNodeMoniker Id="2c357836-c8f9-470e-80ee-7d7b360d6a5d" LastKnownName="Decision1" />
+                <elementDefinition Id="a4e88a0f-fd78-4a5f-9fab-594a501fcea6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8ab9eb00-0a9a-4336-a9bf-12990eef5e1c" name="Editar Publicação" isLeaf="false">
+            <elementDefinition Id="3a93ff15-d399-4cd9-927a-f3bfcafae0a2" />
+            <flowNodeTargets>
+              <controlFlow Id="1fa12eca-04a0-4a3e-85a7-432d43d07d41" isLeaf="false">
+                <activityFinalNodeMoniker Id="b536b2fd-f3dd-4e25-8368-a0b532c2cd2c" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="1e28e0ce-a087-46c0-8980-668a6e454ae6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cd208dd8-88a3-429c-a90e-4b4373cd9cc3" name="Apagar Publicação" isLeaf="false">
+            <elementDefinition Id="e4aac45c-24c6-4178-9d50-ad2fd2dc40b1" />
+            <flowNodeTargets>
+              <controlFlow Id="e3641af4-2726-4de0-841b-d1fe1b4d96e5" isLeaf="false">
+                <activityFinalNodeMoniker Id="b536b2fd-f3dd-4e25-8368-a0b532c2cd2c" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="a66d4398-1d36-429c-87f9-16bfb509e264" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d34f89a5-2650-44ac-8b93-8ff94ba07a72" name="Criar Comentário" isLeaf="false">
+            <elementDefinition Id="1d232129-c64c-49d4-b16a-65b0302e2a2c" />
+            <flowNodeTargets>
+              <controlFlow Id="20756066-11ec-49f1-ad77-b0eed25f4fa0" isLeaf="false">
+                <opaqueActionMoniker Id="2a59ef10-f50b-425d-b007-f273cf0441f3" LastKnownName="Apagar Comentário" />
+                <elementDefinition Id="edb17d00-4f8e-44ab-82bb-e7e2d647d435" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2a59ef10-f50b-425d-b007-f273cf0441f3" name="Apagar Comentário" isLeaf="false">
+            <elementDefinition Id="9a0dadc3-11b0-4d42-ac8f-5a1aa1116dd5" />
+            <flowNodeTargets>
+              <controlFlow Id="768f6ed7-3dec-4584-b908-6c935d5764ec" isLeaf="false">
+                <activityFinalNodeMoniker Id="b536b2fd-f3dd-4e25-8368-a0b532c2cd2c" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="5f740870-b959-41a9-bc25-237a71e75be2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="b536b2fd-f3dd-4e25-8368-a0b532c2cd2c" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="65593838-9cd7-4ba5-a03b-42215e449f59" />
+          </activityFinalNode>
+          <decisionNode Id="2c357836-c8f9-470e-80ee-7d7b360d6a5d" name="Decision1" isLeaf="false">
+            <elementDefinition Id="69acbba4-a798-43ba-96c1-fbf04a282254" />
+            <flowNodeTargets>
+              <controlFlow Id="6896799d-b119-414c-bcc7-bc450fd176aa" isLeaf="false">
+                <opaqueActionMoniker Id="8ab9eb00-0a9a-4336-a9bf-12990eef5e1c" LastKnownName="Editar Publicação" />
+                <elementDefinition Id="aeb9c42b-45a7-4eab-8646-0986c8e9e041" />
+              </controlFlow>
+              <controlFlow Id="d6ac3705-08b2-4420-968e-58f5fa6643e2" isLeaf="false">
+                <opaqueActionMoniker Id="d34f89a5-2650-44ac-8b93-8ff94ba07a72" LastKnownName="Criar Comentário" />
+                <elementDefinition Id="f8447c95-bfa0-4e9d-a067-0a3f3fcce190" />
+              </controlFlow>
+              <controlFlow Id="d3d313ae-837f-4c0b-bed5-a1e510322f8c" isLeaf="false">
+                <opaqueActionMoniker Id="cd208dd8-88a3-429c-a90e-4b4373cd9cc3" LastKnownName="Apagar Publicação" />
+                <elementDefinition Id="114e6e71-e525-4648-93da-a704f88e40dd" />
+              </controlFlow>
+              <controlFlow Id="5cccfc2f-9329-4ac4-b403-eeda3ddfca7a" isLeaf="false">
+                <opaqueActionMoniker Id="5238cb10-3082-46c1-a5d0-718865767d02" LastKnownName="Compartilhar" />
+                <elementDefinition Id="0ff59e59-b2dc-4449-918b-a75ef2af904c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="5238cb10-3082-46c1-a5d0-718865767d02" name="Compartilhar" isLeaf="false">
+            <elementDefinition Id="622f53c4-ee44-46ee-9afb-e9d38142e6b8" />
+            <flowNodeTargets>
+              <controlFlow Id="1ccfa7a9-eea4-40dd-874d-661f271110f7" isLeaf="false">
+                <activityFinalNodeMoniker Id="b536b2fd-f3dd-4e25-8368-a0b532c2cd2c" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="81dfe86e-2612-495d-a7e6-91c9938e0c3b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="7685a47d-fade-4fbf-ac43-da0838e76de9" name="ModelagemDeSistemas">
+    <elementDefinition Id="a643e59f-cc81-4c6c-a880-f7dd110204db" />
+  </package>
+</activityRootModel>
