@@ -3893,6 +3893,358 @@
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="d366570b-e50b-43be-95ae-968236e38ce0"
+        name="Serviço do Facebook"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="01641cb0-fcd1-42c9-b1f1-5edb1f094a3d"
+            isDerived="false"
+            sourceEndRoleName="Serviço do Facebook"
+            targetEndRoleName="Autenticar-se no Sistema"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5d3d8b04-7a08-483c-a32b-a75e1423fbea"
+              LastKnownName="Autenticar-se no Sistema"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4b7751d6-f0ba-4eaf-aa36-cd95f3114665"
+                  name="Serviço do Facebook"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56289202-3b89-4914-ac4f-344c6820e20f"
+                  name="Autenticar-se no Sistema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a12ff534-f878-4704-8fae-aa66b4015377"
+            isDerived="false"
+            sourceEndRoleName="Serviço do Facebook"
+            targetEndRoleName="Compartilhar Postagem do Outdoor no Facebook e Google+"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7b3d0a59-ff33-4a94-918d-56f4d36ea399"
+              LastKnownName="Compartilhar Postagem do Outdoor no Facebook e Google+"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7036f2fa-2ed6-4591-b247-5f434ca1d280"
+                  name="Serviço do Facebook"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="327d703f-39c4-46a6-af09-0a9b2e9b32c7"
+                  name="Compartilhar Postagem do Outdoor no Facebook e Google+"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f938c160-8f7a-48be-9548-62bb52ddd988"
+            isDerived="false"
+            sourceEndRoleName="Serviço do Facebook"
+            targetEndRoleName="Realizar Cadastro no Sistema"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1d152448-c385-4c42-bd81-9f49fb34cd99"
+              LastKnownName="Realizar Cadastro no Sistema"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d61b54d2-00db-496d-8005-5efbf06d8334"
+                  name="Serviço do Facebook"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="95c5c123-9515-474e-8f59-8826861e4b1a"
+                  name="Realizar Cadastro no Sistema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="98e28a6b-f2ae-41fc-bcf8-e70aba384cad"
+        name="Serviço do Google"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="04658588-5409-4e0f-ae8a-d062c734ad15"
+            isDerived="false"
+            sourceEndRoleName="Serviço do Google"
+            targetEndRoleName="Autenticar-se no Sistema"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5d3d8b04-7a08-483c-a32b-a75e1423fbea"
+              LastKnownName="Autenticar-se no Sistema"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a49dae39-f5f0-4adb-b3b5-28f9dc8baed8"
+                  name="Serviço do Google"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="95d68608-771b-4e9e-8c07-41eaada62c7b"
+                  name="Autenticar-se no Sistema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ce26cd01-1c1a-4e38-bab8-9ecb45700462"
+            isDerived="false"
+            sourceEndRoleName="Serviço do Google"
+            targetEndRoleName="Realizar Cadastro no Sistema"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1d152448-c385-4c42-bd81-9f49fb34cd99"
+              LastKnownName="Realizar Cadastro no Sistema"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="19f8e57c-950d-425a-8968-9babef315658"
+                  name="Serviço do Google"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="431c6bc7-95e6-4254-b6b7-f76fc980503a"
+                  name="Realizar Cadastro no Sistema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d9063c74-7218-4c6c-82cd-e312b6c18c8b"
+            isDerived="false"
+            sourceEndRoleName="Serviço do Google"
+            targetEndRoleName="Compartilhar Postagem do Outdoor no Facebook e Google+"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7b3d0a59-ff33-4a94-918d-56f4d36ea399"
+              LastKnownName="Compartilhar Postagem do Outdoor no Facebook e Google+"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c9a449cc-98dc-4699-a55d-8ab60e74578e"
+                  name="Serviço do Google"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="150a8795-62e4-4bfc-860c-ec671560755e"
+                  name="Compartilhar Postagem do Outdoor no Facebook e Google+"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="4a645771-b946-42ec-9130-8c60c9dc8df9"
+        name="Operadora de Cartão de Crédito"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="308e08b3-89c8-4f6e-8070-145e2681159b"
+            isDerived="false"
+            sourceEndRoleName="Operadora de Cartão de Crédito"
+            targetEndRoleName="Efetuar Pagamento"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b1de2606-4a5c-40f0-a327-02af70e5e3aa"
+              LastKnownName="Efetuar Pagamento"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7de3b24c-b961-46a5-bfc2-c756ac9b2099"
+                  name="Operadora de Cartão de Crédito"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e903a7c3-be99-438e-b0de-293870eb4e8d"
+                  name="Efetuar Pagamento"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="0b0d0875-c780-4b57-9e00-1d5c536c5b7d"
+        name="Serviço do PayPal"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="0597305b-e70d-453e-8e36-2e295f2d2f13"
+            isDerived="false"
+            sourceEndRoleName="Serviço do PayPal"
+            targetEndRoleName="Efetuar Pagamento"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b1de2606-4a5c-40f0-a327-02af70e5e3aa"
+              LastKnownName="Efetuar Pagamento"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a8667dc4-e7c8-49ad-b8d7-fd5b3a9687cd"
+                  name="Serviço do PayPal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="edb11678-70c7-4301-856c-16f7e4059693"
+                  name="Efetuar Pagamento"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
