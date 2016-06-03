@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="383a5056-6281-4ea5-9886-b797a53674d9" name="DiagramaDeClassesGeral" linkedPackageId="796dd8e6-50e4-4f70-a445-9356878c2dee" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c7a58ad6-a488-455a-84fa-2b75efc537f4">
+      <profileInstance Id="3aee7a18-d194-4335-b1f1-3dddd57ce442" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e8834ba4-43fd-4945-9ca7-436f8a9c3cd6">
+      <profileInstance Id="769313b5-bb40-43c9-875d-434671daee7c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7f9af636-f631-4f67-8ed8-447be7ea762f" name="Usuário" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0a90aff6-6fe4-45c9-b339-bb7bc58b4b02" />
+        <targetEnds>
+          <association Id="c3768343-6513-43aa-a400-d0119a8a161d" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <classMoniker Id="32dea87b-7d10-4cde-916b-29f242eb1c6f" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="38272304-feed-4d29-9797-1a021f14e278" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7371e375-60ff-4b6b-a459-0268d0e49976" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="21435017-0627-4617-be62-d29c4c143c44" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="92bd2f0f-03fd-45d1-8cc9-516e8ef16481" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="52537a14-1fda-4a86-b095-115019db68b1" />
+          </association>
+          <association Id="c1d9803d-8345-440f-9813-6e10ad7eed86" isDerived="false" sourceEndRoleName="Usuário" targetEndRoleName="Perfil" isLeaf="false" isAbstract="false">
+            <classMoniker Id="985fe3c5-5ef7-4208-94f5-b446b9ba4159" LastKnownName="Perfil" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="28c6070c-96b5-405b-831a-cbaee5775029" name="Usuário" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1bf3efa6-0d4a-4941-8d57-825af247726f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="da10e69e-11fa-4ea2-94fa-07ca2c3c49bd" name="Perfil" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d82cb742-5506-4eec-91df-1d58e8990b27" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="460f2554-fef9-43ad-961a-2e1c76b1c051" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="da05eed2-b0aa-4b98-b10b-fac8d9791712" name="Cliente" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="39d7f22e-f511-483a-b868-9d61558d7f9d" />
+        <generalsInternal>
+          <generalization Id="95a91e23-766e-471b-a03b-17333441c61e" isSubstitutable="false">
+            <classMoniker Id="7f9af636-f631-4f67-8ed8-447be7ea762f" LastKnownName="Usuário" />
+            <elementDefinition Id="fa5b1718-e74f-4d93-a1bd-004a4956c9e8" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="c2859ea3-c90d-4155-b60f-f7b3589b041d" isDerived="false" sourceEndRoleName="Cliente" targetEndRoleName="SolicitaçãoDeServiço" isLeaf="false" name="Faz" isAbstract="false">
+            <classMoniker Id="b1b9daee-0ae8-47b0-aa1f-089daf7b9f0a" LastKnownName="SolicitaçãoDeServiço" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7833c49a-212c-48ed-ac61-f877c55e31b6" name="Cliente" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1e6719af-7462-4507-a6b1-f1d4a92fd6f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd0fd8a9-6b07-4a39-97d2-571b45354c61" name="SolicitaçãoDeServiço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="48feed25-918e-4b40-a5e1-78cb2864c89a" name="Lower" value="*">
+                      <elementDefinition Id="f8c63de4-2b12-4698-9e43-161754a7191b" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3cd1f3f2-5564-46fb-a290-60751d3abae1" name="Upper" value="*">
+                      <elementDefinition Id="a800b9d4-e7e7-4364-9c80-a61c3b9dafe5" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="b56b5fd6-2034-4f81-9579-a70713c5e066" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ab75ac87-161c-45f5-b1df-c5df846219b0" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d339d58b-4513-4c3a-bf16-423598548df1" name="PrestadorDeServiços" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="891148bb-5b99-42a9-8be2-5c2e7a61bcdd" />
+        <generalsInternal>
+          <generalization Id="c49c647f-54da-4f8e-8306-2ddedbcbcecd" isSubstitutable="false">
+            <classMoniker Id="7f9af636-f631-4f67-8ed8-447be7ea762f" LastKnownName="Usuário" />
+            <elementDefinition Id="34fa4a22-0a90-4278-9732-6ddba9c74fb8" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="7b49c5ed-18d1-47f2-818c-a3eff7af0cbd" isDerived="false" sourceEndRoleName="PrestadorDeServiços" targetEndRoleName="ProxySolicitação" isLeaf="false" isAbstract="false">
+            <classMoniker Id="66907bd9-66f9-443a-aa84-af96e1af9787" LastKnownName="ProxySolicitação" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c195bc90-d685-4a1c-b271-547410263e8e" name="PrestadorDeServiços" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7c1bd59c-5b3f-46e4-8004-3a73e816d27a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="954dfe1f-3cdc-427d-bf91-db7399af0004" name="ProxySolicitação" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ed4a848b-9da4-4265-806a-b604199b3483" name="Lower" value="*">
+                      <elementDefinition Id="277f3a55-10a7-4015-9912-68e1e571827b" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1f8b2f4d-44a9-46c1-b060-460c43d26987" name="Upper" value="*">
+                      <elementDefinition Id="a3880ffd-1912-46a6-8311-4a8af8bdc3c0" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="958a8875-cbe4-48ed-b982-14b27e45a1a1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="be14ac5b-4d5e-4364-ab79-e296bf5c9c18" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="32dea87b-7d10-4cde-916b-29f242eb1c6f" name="Login" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="56931a9b-eab0-4013-a832-779415062ebf" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="985fe3c5-5ef7-4208-94f5-b446b9ba4159" name="Perfil" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7da9e951-c48f-4162-8fb4-03ed2b3e72f1" />
+        <targetEnds>
+          <association Id="1f05c34f-3180-4ed9-846f-7913d8a14d70" isDerived="false" sourceEndRoleName="Perfil" targetEndRoleName="Avaliação" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e9a953f0-d2cd-431c-ae2d-8d4f4ca39c59" LastKnownName="Avaliação" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c7c460d7-a1f4-46fd-b528-277ce02edadf" name="Perfil" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="19a0c462-3349-45b6-a7a7-d5aad431e600" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="74329855-7eea-49af-acd7-e04a39446fc4" name="Avaliação" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="f7a84147-7e4d-4b01-af96-e5694d7479fd" name="Lower" value="*">
+                      <elementDefinition Id="b9bba80e-d823-47ae-8503-c975f0946a6c" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="0fa51992-7153-48d5-b211-eb98f712b5e4" name="Upper" value="*">
+                      <elementDefinition Id="d0a97df1-d091-4a3e-88ec-c0569b235c52" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="bbcb23ee-9a54-4694-a41b-80d764060aa4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4c17789c-6898-4106-9ec3-525d4b71618c" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e9a953f0-d2cd-431c-ae2d-8d4f4ca39c59" name="Avaliação" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cb674e41-db23-49f0-be7e-f73fb2c99cbb" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a37c75b9-7903-4af8-97cc-9224d80e27ae" name="PerfilPrestador" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="09a8afea-a088-4e88-896b-333eaf02b9a2" />
+        <generalsInternal>
+          <generalization Id="9a10c94e-5281-4c72-9924-c2fbf7f5e557" isSubstitutable="false">
+            <classMoniker Id="985fe3c5-5ef7-4208-94f5-b446b9ba4159" LastKnownName="Perfil" />
+            <elementDefinition Id="ad541015-8a93-454a-8daf-6b8074e4e796" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="12ee9066-91c1-49d4-a74c-133a4b646381" isDerived="false" sourceEndRoleName="PerfilPrestador" targetEndRoleName="Outdoor" isLeaf="false" isAbstract="false">
+            <classMoniker Id="60ea310c-d358-4b95-8948-ea7075cda52c" LastKnownName="Outdoor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3bafbd39-61d5-4a3c-b5cb-4116f8a46b67" name="PerfilPrestador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1a7c3151-dcd5-467e-9414-b2e4a057a19a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="828e04d6-bf13-4016-8c4f-8e908c513364" name="Outdoor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="e5828026-eea0-4880-b4eb-3762a971caf9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="afbd1eae-274f-493c-8c97-3945a0cf47ba" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="60ea310c-d358-4b95-8948-ea7075cda52c" name="Outdoor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4fe71890-071e-432d-bef5-3c854e8d5709" />
+        <targetEnds>
+          <association Id="9aa0d8c2-7bf1-46f2-a347-723160bb61d8" isDerived="false" sourceEndRoleName="Outdoor" targetEndRoleName="PublicaçãoOutdoor" isLeaf="false" isAbstract="false">
+            <classMoniker Id="335509ce-4d48-4145-b0ff-11acdf89644e" LastKnownName="PublicaçãoOutdoor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc899612-edf0-4ceb-a984-f3522209ab54" name="Outdoor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f1cc9401-4f50-4e79-8241-71c646828bad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa77e54e-f931-4f28-940b-773d3e70865c" name="PublicaçãoOutdoor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="f8f82dd7-d59c-4803-9e13-3f8d522e5981" name="Lower" value="*">
+                      <elementDefinition Id="c6c605f6-abc3-486c-93ec-3668e555366a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4fa6363d-2319-48bb-a865-83823be5d242" name="Upper" value="*">
+                      <elementDefinition Id="e972d07c-0502-4067-a67d-4fe70fd1b29a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="52c04f8a-a28b-4b37-bc6d-de5e8286aeff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="72467c40-9228-408c-9720-f30e2d3c25ce" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="335509ce-4d48-4145-b0ff-11acdf89644e" name="PublicaçãoOutdoor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="00f79d29-50d8-4d4b-8628-b8e94e0417fa" />
+        <targetEnds>
+          <association Id="e6c84e47-7199-44b2-9d80-03093e428879" isDerived="false" sourceEndRoleName="PublicaçãoOutdoor" targetEndRoleName="ComentárioOutdoor" isLeaf="false" isAbstract="false">
+            <classMoniker Id="4cd9d1a5-3fe3-4247-8400-5de0339ff550" LastKnownName="ComentárioOutdoor" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="58f9f1be-eab6-4b59-8c3c-79c3ad1bbdb3" name="PublicaçãoOutdoor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="74671055-b420-4f5a-a354-b3595f1ce985" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="22017653-5bcc-458b-a797-d896f5df6748" name="ComentárioOutdoor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="82e642fd-d0a3-45d8-a7a3-933b65309831" name="Lower" value="*">
+                      <elementDefinition Id="5f3ab44b-3d74-48e4-a039-b7a0b4cd3c55" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="43b1e058-868b-4bd9-b812-deaf5b64a525" name="Upper" value="*">
+                      <elementDefinition Id="08de5bb9-4b68-40b3-9df3-db3278c693da" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0a1cabce-2a29-4a0a-bcce-4a79aa701cb7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="337fe247-1b0e-4665-b22e-d7bc9b1e0342" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4cd9d1a5-3fe3-4247-8400-5de0339ff550" name="ComentárioOutdoor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3c8d0dde-8827-47dc-a6bb-bf2280a60970" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b1b9daee-0ae8-47b0-aa1f-089daf7b9f0a" name="SolicitaçãoDeServiço" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="01a818c0-70e4-4186-9d4e-a2dd7c7fd28e" />
+        <targetEnds>
+          <association Id="e4067671-212f-49a1-842c-478cf6afce9e" isDerived="false" sourceEndRoleName="SolicitaçãoDeServiço" targetEndRoleName="Pagamento" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b6204839-9b61-4283-ac53-8798d2131f2d" LastKnownName="Pagamento" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9dd91636-5bbb-4f43-8232-84becd74ea1f" name="SolicitaçãoDeServiço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="169b67a4-a00b-40ca-a202-3675d637e85d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e7f8599e-8e96-47b2-8f19-54897d68be03" name="Pagamento" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="5d25b78e-9e8d-45d3-b19a-dc311b57b706" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bfd900ec-e26e-4a14-bf77-f6866f0c39ee" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="66907bd9-66f9-443a-aa84-af96e1af9787" name="ProxySolicitação" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f8e61295-e65e-4dcf-87c8-970c5cc133e4" />
+        <targetEnds>
+          <association Id="7682ae52-ba6a-4a8a-a917-c32fab664f2c" isDerived="false" sourceEndRoleName="ProxySolicitação" targetEndRoleName="SolicitaçãoDeServiço" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b1b9daee-0ae8-47b0-aa1f-089daf7b9f0a" LastKnownName="SolicitaçãoDeServiço" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9bc7bafc-f971-4943-a615-d403345bc68c" name="ProxySolicitação" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="456b3725-b8b5-471c-ba56-583c5b63a542" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e653755b-5d86-4ec7-8845-b2f9f1de7da4" name="SolicitaçãoDeServiço" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="31473f93-737a-4362-8e29-d0d9fa617980" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3902675d-587b-4ad4-879c-35b07cc7c051" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b6204839-9b61-4283-ac53-8798d2131f2d" name="Pagamento" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a48104ca-08be-4027-bf6e-6efccec5c1cd" />
+        <targetEnds>
+          <association Id="1168d8af-c42e-4d53-b941-52158f63666e" isDerived="false" sourceEndRoleName="Pagamento" targetEndRoleName="IOrdemPagamento" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="949dc200-8998-4d1f-9da5-68d0eef5d8c9" LastKnownName="IOrdemPagamento" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c8f78d09-d380-4b56-a71a-0ac40ef2e42f" name="Pagamento" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d49d63bb-bedb-4ebf-ba9b-a76ea550ab4a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6cfde4bd-d68d-41cc-ba6a-533df0e86241" name="IOrdemPagamento" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="c74cabae-e064-450c-9e35-8630f383ec9a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a911c51b-9ac0-4c3e-ab5a-8a5df3a4046d" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="744eba1e-e5ca-4df4-92b6-d12f15d83a2e" name="OrdemPagamentoCC" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5759ebf8-6c91-436e-9307-f0b1f103eca0" />
+        <suppliersInternal>
+          <dependency Id="d9b3be60-59c2-4ff5-979a-01e840ae2091">
+            <interfaceMoniker Id="949dc200-8998-4d1f-9da5-68d0eef5d8c9" LastKnownName="IOrdemPagamento" />
+            <elementDefinition Id="519000f8-9f91-4bbe-bce9-f901f04dc22d" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="eed6900a-4842-4fa7-b54f-40df579e0de0" name="OrdemPagamentoPayPal" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ec7c9b77-2e7d-41b9-806a-20ccdbcdd5f1" />
+        <suppliersInternal>
+          <dependency Id="9890e12c-3ebd-4c66-a37d-f425abcea0f8">
+            <interfaceMoniker Id="949dc200-8998-4d1f-9da5-68d0eef5d8c9" LastKnownName="IOrdemPagamento" />
+            <elementDefinition Id="f851b513-53ea-498f-ba81-72ebb19096fa" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="949dc200-8998-4d1f-9da5-68d0eef5d8c9" name="IOrdemPagamento" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f3a6f534-5aa0-4d19-88ba-c67ab4b32b67" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="796dd8e6-50e4-4f70-a445-9356878c2dee" name="ModelagemDeSistemas">
+    <elementDefinition Id="a643e59f-cc81-4c6c-a880-f7dd110204db" />
+  </package>
+</logicalClassDesignerModel>

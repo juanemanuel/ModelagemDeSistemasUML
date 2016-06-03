@@ -29,6 +29,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Diagrama de Casos de Uso\UCD.usecasediagram</DependentUpon>
     </Content>
+    <Content Include="Diagrama de Classes\DiagramaDeClassesGeral.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Diagrama de Classes\DiagramaDeClassesGeral.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Diagrama de Classes\DiagramaDeClassesGeral.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Diagramas de Atividade\Aceitar_Contrato.activitydiagram">
       <SubType>Content</SubType>
     </Content>
@@ -112,5 +119,6 @@
     </Content>
     <Folder Include="Diagramas de Atividade" />
     <Folder Include="Diagrama de Casos de Uso" />
+    <Folder Include="Diagrama de Classes" />
   </ItemGroup>
 </Project>
