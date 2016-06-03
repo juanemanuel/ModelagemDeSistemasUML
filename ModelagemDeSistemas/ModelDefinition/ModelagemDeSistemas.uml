@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="a643e59f-cc81-4c6c-a880-f7dd110204db"
   name="ModelagemDeSistemas" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -4249,7 +4249,7 @@
       <class
         Id="0a90aff6-6fe4-45c9-b339-bb7bc58b4b02"
         name="Usuário"
-        isAbstract="false"
+        isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
         <targetEnds>
@@ -4259,6 +4259,7 @@
             sourceEndRoleName="Usuário"
             targetEndRoleName="Login"
             isLeaf="false"
+            name="Possui"
             isAbstract="false">
             <classMoniker
               Id="56931a9b-eab0-4013-a832-779415062ebf"
@@ -4298,6 +4299,7 @@
             sourceEndRoleName="Usuário"
             targetEndRoleName="Perfil"
             isLeaf="false"
+            name="Possui"
             isAbstract="false">
             <classMoniker
               Id="7da9e951-c48f-4162-8fb4-03ed2b3e72f1"
@@ -4332,6 +4334,52 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="fad217e3-7ec3-48c2-ae5c-2c1a5910d5ef"
+            name="Nome"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7ae39625-90c1-4915-b5af-bcf0727393ba"
+            name="Sobrenome"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4041083f-62b8-403c-87ab-eedbee89131f"
+            name="Email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="799907b1-3ee3-4d5c-b82d-a2bcea28ad5d"
+            name="Telefone"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -4405,6 +4453,59 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="84b7027d-59bf-4584-805e-3a1400473e48"
+            isDerived="false"
+            sourceEndRoleName="Cliente"
+            targetEndRoleName="Reclamação"
+            isLeaf="false"
+            name="Faz"
+            isAbstract="false">
+            <classMoniker
+              Id="63a933a5-7c93-4f8b-a2f5-93d13f3dd4c1"
+              LastKnownName="Reclamação"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="573017e4-450e-4700-ab95-5bdaf84a9c50"
+                  name="Cliente"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="757877c7-3000-488f-bba4-a322ce4071b2"
+                  name="Reclamação"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="10d35eeb-3ff2-4f8a-928e-7f174b8acaec"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="16c48ad0-a4d7-4a86-a73e-f1c7c850545c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </class>
     </packageHasNamedElement>
@@ -4432,6 +4533,7 @@
             sourceEndRoleName="PrestadorDeServiços"
             targetEndRoleName="ProxySolicitação"
             isLeaf="false"
+            name="Atualiza"
             isAbstract="false">
             <classMoniker
               Id="f8e61295-e65e-4dcf-87c8-970c5cc133e4"
@@ -4487,7 +4589,90 @@
         name="Login"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="b3bcd4d5-95f0-4d4b-ba3b-7e26fe2cf01c"
+            name="Email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9183ddd1-0cff-497f-b78a-12bd3b755a1f"
+            name="HashSenha"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="823092db-56c6-4ae5-a730-efa0bfdaad92"
+            name="AutenticadoFacebook"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelagemDeSistemas.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="db92fd07-0882-4a89-b361-f64bf115f4a7"
+            name="AutenticadoGoogle"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelagemDeSistemas.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="743a9230-b554-406a-ba9f-1b0e9fec8060"
+            name="TokenFB"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="dbdf969f-026f-4901-bf6e-479f834cbf11"
+            name="TokenGoogle"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -4550,6 +4735,48 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="063b8473-026c-49d5-bba5-7d3dd377681e"
+            name="Avaliações"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="cb674e41-db23-49f0-be7e-f73fb2c99cbb"
+                LastKnownName="Avaliação"
+                LastKnownLocation="ModelagemDeSistemas.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f588367c-a82d-4a26-a475-bfc6035f889a"
+            name="Nome"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6dd2acf9-7411-4380-9d83-3a61b017a3b2"
+            name="Sobrenome"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -4558,7 +4785,32 @@
         name="Avaliação"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="b3b63644-2b0d-4945-9f83-85609774a019"
+            name="Nota"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5ae8c829-3afa-43ae-a386-43160adac10b"
+            name="Comentário"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -4618,6 +4870,19 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="7f2a4544-51be-4b1b-a32b-483f4b976576"
+            name="ServiçosPrestados"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -4629,7 +4894,7 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="72467c40-9228-408c-9720-f30e2d3c25ce"
+            Id="88b44154-cf30-4257-b0d0-8a52e7a89918"
             isDerived="false"
             sourceEndRoleName="Outdoor"
             targetEndRoleName="PublicaçãoOutdoor"
@@ -4642,20 +4907,20 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="f1cc9401-4f50-4e79-8241-71c646828bad"
+                  Id="35c5c213-66d1-4f9c-834a-c061df681252"
                   name="Outdoor"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Shared"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="52c04f8a-a28b-4b37-bc6d-de5e8286aeff"
+                  Id="ff85da19-7f3d-4d49-93c6-2310dc2e04fa"
                   name="PublicaçãoOutdoor"
                   isLeaf="false"
                   isStatic="false"
@@ -4663,16 +4928,16 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false">
+                  isComposite="true">
                   <lowerValueInternal>
                     <literalString
-                      Id="c6c605f6-abc3-486c-93ec-3668e555366a"
+                      Id="1246fe59-5c7f-4d12-a606-5e2a8b7b2a65"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="e972d07c-0502-4067-a67d-4fe70fd1b29a"
+                      Id="23005cba-2e38-45eb-b7d3-24dbf8517332"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -4681,6 +4946,19 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="d93a7287-0196-4139-af09-981ec01ee7d0"
+            name="Pubicações"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -4692,7 +4970,7 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="337fe247-1b0e-4665-b22e-d7bc9b1e0342"
+            Id="a68791b5-2661-446f-98ac-c24c66a48693"
             isDerived="false"
             sourceEndRoleName="PublicaçãoOutdoor"
             targetEndRoleName="ComentárioOutdoor"
@@ -4705,20 +4983,20 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="74671055-b420-4f5a-a354-b3595f1ce985"
+                  Id="0432a842-24a6-43ba-aee1-e8b52220d317"
                   name="PublicaçãoOutdoor"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Shared"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="0a1cabce-2a29-4a0a-bcce-4a79aa701cb7"
+                  Id="10c54c00-77e2-4ab7-a1a3-4c308f7f553a"
                   name="ComentárioOutdoor"
                   isLeaf="false"
                   isStatic="false"
@@ -4726,16 +5004,16 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false">
+                  isComposite="true">
                   <lowerValueInternal>
                     <literalString
-                      Id="5f3ab44b-3d74-48e4-a039-b7a0b4cd3c55"
+                      Id="fe8a0659-6900-4173-9903-6145a82f32fa"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="08de5bb9-4b68-40b3-9df3-db3278c693da"
+                      Id="b6170748-efc2-4eb6-984b-e49da59dbf29"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -4744,6 +5022,41 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="63fe74ff-9885-4323-976d-6ea48688b8a6"
+            name="Comentários"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7c4af329-92c4-48c8-a356-aad43e1ad008"
+            name="ConteúdoHtml"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="dbd57916-feb4-4b45-a5a8-87d68dd3efcc"
+            name="Curtidas"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -4752,7 +5065,21 @@
         name="ComentárioOutdoor"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="e5ae6e86-2d5f-4876-bd19-0ac31df839b2"
+            name="Conteúdo"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -4761,6 +5088,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="7e3a7e40-b9de-4763-816a-a9f963315820">
+            <interfaceMoniker
+              Id="927e13e8-44da-4b63-8aff-99750701ba16"
+              LastKnownName="ISolicitação"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="bfd900ec-e26e-4a14-bf77-f6866f0c39ee"
@@ -4811,6 +5147,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="b1810339-8cb2-436c-aea6-39fb6ea69315">
+            <interfaceMoniker
+              Id="927e13e8-44da-4b63-8aff-99750701ba16"
+              LastKnownName="ISolicitação"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="3902675d-587b-4ad4-879c-35b07cc7c051"
@@ -4954,6 +5299,104 @@
         name="IOrdemPagamento"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="927e13e8-44da-4b63-8aff-99750701ba16"
+        name="ISolicitação"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="afa4dbd5-f037-477a-adc3-d979f410eee2"
+        name="StatusSolicitação"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="438149d9-4a99-46aa-a210-4d2c577247c1"
+            isDerived="false"
+            sourceEndRoleName="StatusSolicitação"
+            targetEndRoleName="ISolicitação"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="927e13e8-44da-4b63-8aff-99750701ba16"
+              LastKnownName="ISolicitação"
+              LastKnownLocation="ModelagemDeSistemas.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e6a7c3d2-3c5b-482c-814a-dc881b9390a3"
+                  name="StatusSolicitação"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="be35ea4d-6a4a-4c60-9392-b0d168dceba4"
+                  name="ISolicitação"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="cdbfcc23-51a1-4fa6-981f-e7d119cb2bda"
+            name="Pendente" />
+          <enumerationLiteral
+            Id="6415151d-a49a-4963-bf44-2539b1460a95"
+            name="RevisãoSolicitada" />
+          <enumerationLiteral
+            Id="99cc1427-b49f-4a27-aa4d-605662c06f3a"
+            name="Aceito" />
+          <enumerationLiteral
+            Id="29ecc074-2566-4af8-9bb6-6cc3242f93a2"
+            name="Recusado" />
+          <enumerationLiteral
+            Id="a910302d-2faf-441f-beff-48ce4601b59d"
+            name="EmExecução" />
+          <enumerationLiteral
+            Id="b9b96d20-12a7-4917-9165-618588dfb0ad"
+            name="ServiçoConcluido" />
+          <enumerationLiteral
+            Id="caaed040-572a-443e-b1ed-e8caa78e94f7"
+            name="Pago" />
+          <enumerationLiteral
+            Id="7ff0dce8-704e-4535-a747-dd6f27efd92f"
+            name="Finalizada" />
+          <enumerationLiteral
+            Id="0f8d210a-bfcd-41c4-9f5a-197642396214"
+            name="Cancelada" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="63a933a5-7c93-4f8b-a2f5-93d13f3dd4c1"
+        name="Reclamação"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2654f606-7425-45ca-bc4f-1b2232f924c4"
+        name="avalia" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
